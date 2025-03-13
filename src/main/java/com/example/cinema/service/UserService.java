@@ -41,7 +41,7 @@ public class UserService {
     if (age != null) {
       List<User> filteredUsers = users.stream()
               .filter(user -> user.getAge() == age)
-              .collect(Collectors.toList());
+              .toList();
 
       if (filteredUsers.isEmpty()) {
         throw new ResponseStatusException(

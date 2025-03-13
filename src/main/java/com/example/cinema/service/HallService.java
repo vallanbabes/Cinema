@@ -50,9 +50,7 @@ public class HallService {
    * @throws ResponseStatusException if the hall is not found
    */
   public void deleteHall(Long hallId) {
-    Hall hall = hallRepository.findById(hallId)
-            .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Hall not found"));
-
+    Hall hall = findHallById(hallId);
     hallRepository.delete(hall);
   }
 
@@ -64,8 +62,7 @@ public class HallService {
    * @throws ResponseStatusException if the hall is not found
    */
   public Hall getHallById(Long hallId) {
-    return hallRepository.findById(hallId)
-            .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Hall not found"));
+    return findHallById(hallId);
   }
 
   /**
@@ -77,11 +74,20 @@ public class HallService {
    * @throws ResponseStatusException if the hall is not found
    */
   public Hall updateHall(Long hallId, Hall updatedHall) {
-    Hall existingHall = hallRepository.findById(hallId)
-            .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Hall not found"));
-
+    Hall existingHall = findHallById(hallId);
     existingHall.setName(updatedHall.getName());
-
     return hallRepository.save(existingHall);
+  }
+
+  /**
+   * Finds a hall by its ID or throws an exception if not found.
+   *
+   * @param hallId the ID of the hall to find
+   * @return the found hall
+   * @throws ResponseStatusException if the hall is not found
+   */
+  private Hall findHallById(Long hallId) {
+    return hallRepository.findById(hallId)
+            .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Hall not found"));
   }
 }
