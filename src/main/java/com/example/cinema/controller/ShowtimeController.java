@@ -6,6 +6,7 @@ import com.example.cinema.service.ShowtimeService;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.List;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -77,6 +78,16 @@ public class ShowtimeController {
     updatedShowtime.setHall(request.getHall());
 
     return showtimeService.updateShowtime(showtimeId, updatedShowtime);
+  }
+  /**
+   * Deletes a showtime by its ID.
+   *
+   * @param showtimeId the ID of the showtime to delete
+   */
+
+  @DeleteMapping("/{showtimeId}")
+  public void deleteShowtime(@PathVariable Long showtimeId) {
+    showtimeService.deleteShowtime(showtimeId);
   }
 
   /**

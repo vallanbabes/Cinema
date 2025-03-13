@@ -76,4 +76,17 @@ public class ShowtimeService {
 
     return showtimeRepository.save(existingShowtime);
   }
+  /**
+   * Deletes a showtime by its ID.
+   *
+   * @param showtimeId the ID of the showtime to delete
+   */
+
+  public void deleteShowtime(Long showtimeId) {
+    Showtime showtime = showtimeRepository.findById(showtimeId)
+            .orElseThrow(() -> new RuntimeException("Showtime not found"));
+
+    // **Удаляем сеанс**
+    showtimeRepository.delete(showtime);
+  }
 }
