@@ -2,7 +2,10 @@ package com.example.cinema.service;
 
 import com.example.cinema.model.User;
 import java.util.List;
+import java.util.stream.Collectors;
+import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
+import org.springframework.web.server.ResponseStatusException;
 
 /**
  * Service class for managing users.
@@ -32,12 +35,20 @@ public class UserService {
    *
    * @param age the age to filter users by, can be null
    * @return a list of users with the specified age, or all users if age is null
+   * @throws ResponseStatusException if no users with the specified age are found
    */
   public List<User> getUsersByAge(Integer age) {
     if (age != null) {
-      return users.stream()
+      List<User> filteredUsers = users.stream()
               .filter(user -> user.getAge() == age)
-              .toList();
+              .collect(Collectors.toList());
+
+      if (filteredUsers.isEmpty()) {
+        throw new ResponseStatusException(
+                HttpStatus.NOT_FOUND, "Users with age " + age + " not found"
+        );
+      }
+      return filteredUsers;
     }
     return users;
   }
@@ -47,12 +58,14 @@ public class UserService {
    *
    * @param id the ID of the user
    * @return the user with the specified ID
-   * @throws RuntimeException if the user is not found
+   * @throws ResponseStatusException if the user is not found
    */
   public User getUserById(int id) {
     return users.stream()
             .filter(user -> user.getId() == id)
             .findFirst()
-            .orElseThrow(() -> new RuntimeException("User not found"));
+            .orElseThrow(() -> new ResponseStatusException(
+                    HttpStatus.NOT_FOUND, "User with ID " + id + " not found"
+            ));
   }
 }

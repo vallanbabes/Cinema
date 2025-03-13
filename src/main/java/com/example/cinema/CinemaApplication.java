@@ -3,9 +3,8 @@ package com.example.cinema;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-/**
- * Main class for the CinemaApplication.
- * This class serves as the entry point for the Spring Boot application.
+/** Main class for the CinemaApplication.
+ * This is the entry point for the Spring Boot application.
  */
 @SpringBootApplication
 public class CinemaApplication {
