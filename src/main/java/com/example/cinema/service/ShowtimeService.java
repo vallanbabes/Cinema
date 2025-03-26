@@ -17,6 +17,9 @@ import org.springframework.stereotype.Service;
 @Service
 public class ShowtimeService {
 
+  private static final String SHOWTIME_NOT_FOUND = "Showtime not found";
+  private static final String HALL_NOT_FOUND = "Hall not found";
+
   private final ShowtimeRepository showtimeRepository;
   private final HallRepository hallRepository;
   private final ShowtimeCache showtimeCache;
@@ -46,7 +49,7 @@ public class ShowtimeService {
    */
   public Showtime createShowtime(Long hallId, String filmTitle, LocalDateTime dateTime) {
     Hall hall = hallRepository.findById(hallId)
-            .orElseThrow(() -> new RuntimeException("Hall not found"));
+            .orElseThrow(() -> new RuntimeException(HALL_NOT_FOUND));
 
     Showtime showtime = new Showtime(dateTime, filmTitle, hall);
     showtimeCache.put(showtime.getId(), showtime);
@@ -66,7 +69,7 @@ public class ShowtimeService {
     }
 
     Showtime showtime = showtimeRepository.findById(showtimeId)
-            .orElseThrow(() -> new RuntimeException("Showtime not found"));
+            .orElseThrow(() -> new RuntimeException(SHOWTIME_NOT_FOUND));
 
     showtimeCache.put(showtimeId, showtime);
     return showtime;
@@ -92,10 +95,10 @@ public class ShowtimeService {
    */
   public Showtime updateShowtime(Long showtimeId, Showtime updatedShowtime) {
     Showtime existingShowtime = showtimeRepository.findById(showtimeId)
-            .orElseThrow(() -> new RuntimeException("Showtime not found"));
+            .orElseThrow(() -> new RuntimeException(SHOWTIME_NOT_FOUND));
 
     Hall hall = hallRepository.findById(updatedShowtime.getHall().getId())
-            .orElseThrow(() -> new RuntimeException("Hall not found"));
+            .orElseThrow(() -> new RuntimeException(HALL_NOT_FOUND));
 
     existingShowtime.setFilmTitle(updatedShowtime.getFilmTitle());
     existingShowtime.setDateTime(updatedShowtime.getDateTime());
@@ -112,7 +115,7 @@ public class ShowtimeService {
    */
   public void deleteShowtime(Long showtimeId) {
     Showtime showtime = showtimeRepository.findById(showtimeId)
-            .orElseThrow(() -> new RuntimeException("Showtime not found"));
+            .orElseThrow(() -> new RuntimeException(SHOWTIME_NOT_FOUND));
 
     showtimeRepository.delete(showtime);
     showtimeCache.remove(showtimeId);
