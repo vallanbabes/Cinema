@@ -1,14 +1,15 @@
 package com.example.cinema.service;
 
+import com.example.cinema.exception.ResourceNotFoundException;
 import com.example.cinema.model.Hall;
 import com.example.cinema.repository.HallRepository;
 import java.util.List;
-import org.springframework.http.HttpStatus;
+import java.util.Optional;
 import org.springframework.stereotype.Service;
-import org.springframework.web.server.ResponseStatusException;
 
 /**
  * Service class for managing cinema halls.
+ * Provides business logic for hall-related operations.
  */
 @Service
 public class HallService {
@@ -18,23 +19,23 @@ public class HallService {
   /**
    * Constructs a HallService with the specified HallRepository.
    *
-   * @param hallRepository the repository used for hall operations
+   * @param hallRepository the repository for hall data access
    */
   public HallService(HallRepository hallRepository) {
     this.hallRepository = hallRepository;
   }
 
   /**
-   * Retrieves all halls.
+   * Retrieves all cinema halls.
    *
-   * @return a list of all halls
+   * @return list of all halls
    */
   public List<Hall> getAllHalls() {
     return hallRepository.findAll();
   }
 
   /**
-   * Creates a new hall.
+   * Creates a new cinema hall.
    *
    * @param hall the hall to create
    * @return the created hall
@@ -44,50 +45,40 @@ public class HallService {
   }
 
   /**
-   * Deletes a hall by its ID.
-   *
-   * @param hallId the ID of the hall to delete
-   * @throws ResponseStatusException if the hall is not found
-   */
-  public void deleteHall(Long hallId) {
-    Hall hall = findHallById(hallId);
-    hallRepository.delete(hall);
-  }
-
-  /**
    * Retrieves a hall by its ID.
    *
    * @param hallId the ID of the hall to retrieve
-   * @return the requested hall
-   * @throws ResponseStatusException if the hall is not found
+   * @return Optional containing the hall if found
    */
-  public Hall getHallById(Long hallId) {
-    return findHallById(hallId);
+  public Optional<Hall> getHallById(Long hallId) {
+    return hallRepository.findById(hallId);
   }
 
   /**
-   * Updates information about a hall.
+   * Updates an existing hall.
    *
    * @param hallId the ID of the hall to update
-   * @param updatedHall the updated hall details
-   * @return the updated hall
-   * @throws ResponseStatusException if the hall is not found
+   * @param updatedHall the updated hall data
+   * @return Optional containing the updated hall if found
    */
-  public Hall updateHall(Long hallId, Hall updatedHall) {
-    Hall existingHall = findHallById(hallId);
-    existingHall.setName(updatedHall.getName());
-    return hallRepository.save(existingHall);
+  public Optional<Hall> updateHall(Long hallId, Hall updatedHall) {
+    return hallRepository.findById(hallId).map(existingHall -> {
+      existingHall.setName(updatedHall.getName());
+      existingHall.setCapacity(updatedHall.getCapacity());
+      return hallRepository.save(existingHall);
+    });
   }
 
   /**
-   * Finds a hall by its ID or throws an exception if not found.
+   * Deletes a hall by its ID.
    *
-   * @param hallId the ID of the hall to find
-   * @return the found hall
-   * @throws ResponseStatusException if the hall is not found
+   * @param hallId the ID of the hall to delete
+   * @throws ResourceNotFoundException if hall is not found
    */
-  private Hall findHallById(Long hallId) {
-    return hallRepository.findById(hallId)
-            .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Hall not found"));
+  public void deleteHall(Long hallId) {
+    if (!hallRepository.existsById(hallId)) {
+      throw new ResourceNotFoundException("Hall not found with id " + hallId);
+    }
+    hallRepository.deleteById(hallId);
   }
 }

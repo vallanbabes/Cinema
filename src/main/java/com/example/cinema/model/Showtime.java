@@ -8,6 +8,8 @@ import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.Size;
 import java.time.LocalDateTime;
 
 /**
@@ -22,6 +24,9 @@ public class Showtime {
   private Long id;
 
   private LocalDateTime dateTime;
+
+  @NotBlank(message = "Film title is required")
+  @Size(max = 100, message = "Film title must be less than 100 characters")
   private String filmTitle;
 
   @ManyToOne
@@ -32,7 +37,8 @@ public class Showtime {
   /**
    * Default constructor.
    */
-  public Showtime() {}
+  public Showtime() {
+  }
 
   /**
    * Constructs a Showtime with the specified date, film title, and hall.
@@ -54,6 +60,15 @@ public class Showtime {
    */
   public Long getId() {
     return id;
+  }
+
+  /**
+   * Sets the ID of the showtime.
+   *
+   * @param id the showtime ID to set
+   */
+  public void setId(Long id) {
+    this.id = id;
   }
 
   /**
@@ -109,4 +124,5 @@ public class Showtime {
   public void setHall(Hall hall) {
     this.hall = hall;
   }
+
 }
