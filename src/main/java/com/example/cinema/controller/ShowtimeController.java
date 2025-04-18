@@ -3,6 +3,10 @@ package com.example.cinema.controller;
 import com.example.cinema.model.Hall;
 import com.example.cinema.model.Showtime;
 import com.example.cinema.service.ShowtimeService;
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.Parameter;
+import io.swagger.v3.oas.annotations.tags.Tag;
+import io.swagger.v3.oas.annotations.media.Schema;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
@@ -18,70 +22,45 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-/**
- * Controller for managing showtimes in the cinema.
- */
 @RestController
 @RequestMapping("/api/showtimes")
+@Tag(name = "Showtimes", description = "Movie showtimes management")
 public class ShowtimeController {
 
   private final ShowtimeService showtimeService;
 
-  /**
-   * Constructs a ShowtimeController with the specified ShowtimeService.
-   *
-   * @param showtimeService the service used for showtime operations
-   */
   public ShowtimeController(ShowtimeService showtimeService) {
     this.showtimeService = showtimeService;
   }
 
-  /**
-   * Creates a new showtime for a specified hall.
-   *
-   * @param hallId the ID of the hall
-   * @param request the showtime request containing film title and date
-   * @return the created showtime
-   */
+  @Operation(summary = "Create new showtime")
   @PostMapping("/{hallId}")
-  public Showtime createShowtime(@PathVariable Long hallId,
-                                 @RequestBody ShowtimeRequest request) {
+  public Showtime createShowtime(
+          @Parameter(description = "ID of the cinema hall") @PathVariable Long hallId,
+          @RequestBody ShowtimeRequest request) {
     LocalDateTime dateTime = LocalDateTime.parse(
             request.getDateTime(), DateTimeFormatter.ISO_LOCAL_DATE_TIME);
     return showtimeService.createShowtime(hallId, request.getFilmTitle(), dateTime);
   }
 
-  /**
-   * Retrieves all showtimes.
-   *
-   * @return a list of all showtimes
-   */
+  @Operation(summary = "Get all showtimes")
   @GetMapping
   public List<Showtime> getAllShowtimes() {
     return showtimeService.getAllShowtimes();
   }
 
-  /**
-   * Retrieves a showtime by ID.
-   *
-   * @param showtimeId the ID of the showtime
-   * @return the found showtime
-   */
+  @Operation(summary = "Get showtime by ID")
   @GetMapping("/{showtimeId}")
-  public Showtime getShowtimeById(@PathVariable Long showtimeId) {
+  public Showtime getShowtimeById(
+          @Parameter(description = "ID of the showtime") @PathVariable Long showtimeId) {
     return showtimeService.getShowtimeById(showtimeId);
   }
 
-  /**
-   * Updates information about a showtime.
-   *
-   * @param showtimeId the ID of the showtime to update
-   * @param request the showtime request containing updated details
-   * @return the updated showtime
-   */
+  @Operation(summary = "Update showtime")
   @PutMapping("/{showtimeId}")
-  public Showtime updateShowtime(@PathVariable Long showtimeId,
-                                 @RequestBody ShowtimeRequest request) {
+  public Showtime updateShowtime(
+          @Parameter(description = "ID of the showtime to update") @PathVariable Long showtimeId,
+          @RequestBody ShowtimeRequest request) {
     LocalDateTime dateTime = LocalDateTime.parse(
             request.getDateTime(), DateTimeFormatter.ISO_LOCAL_DATE_TIME);
 
@@ -93,103 +72,63 @@ public class ShowtimeController {
     return showtimeService.updateShowtime(showtimeId, updatedShowtime);
   }
 
-  /**
-   * Deletes a showtime by its ID.
-   *
-   * @param showtimeId the ID of the showtime to delete
-   */
+  @Operation(summary = "Delete showtime")
   @DeleteMapping("/{showtimeId}")
-  public void deleteShowtime(@PathVariable Long showtimeId) {
+  public void deleteShowtime(
+          @Parameter(description = "ID of the showtime to delete") @PathVariable Long showtimeId) {
     showtimeService.deleteShowtime(showtimeId);
   }
 
-  /**
-   * DTO class for passing showtime data in JSON format.
-   */
+  @Operation(summary = "Filter showtimes by movie title")
+  @GetMapping("/filter/title/{hallId}")
+  public List<Showtime> getShowtimesByTitle(
+          @Parameter(description = "ID of the cinema hall") @PathVariable Long hallId,
+          @Parameter(description = "Movie title to search for") @RequestParam String title) {
+    return showtimeService.filterByTitle(hallId, title);
+  }
+
+  @Operation(summary = "Filter showtimes by date")
+  @GetMapping("/filter/date/{hallId}")
+  public List<Showtime> getShowtimesByDate(
+          @Parameter(description = "ID of the cinema hall") @PathVariable Long hallId,
+          @Parameter(description = "Date to filter by (format: yyyy-MM-dd)", example = "2023-12-31")
+          @RequestParam @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate date) {
+    return showtimeService.filterByDate(hallId, date);
+  }
+
+  @Schema(description = "Request object for creating/updating showtimes")
   public static class ShowtimeRequest {
+    @Schema(description = "Title of the movie", example = "Inception")
     private String filmTitle;
-    private String dateTime; // Format "yyyy-MM-dd'T'HH:mm:ss"
+
+    @Schema(description = "Date and time of the showtime (ISO format)", example = "2023-12-31T18:30:00")
+    private String dateTime;
+
+    @Schema(description = "Cinema hall information")
     private Hall hall;
 
-    /**
-     * Gets the film title.
-     *
-     * @return the film title
-     */
     public String getFilmTitle() {
       return filmTitle;
     }
 
-    /**
-     * Sets the film title.
-     *
-     * @param filmTitle the film title to set
-     */
     public void setFilmTitle(String filmTitle) {
       this.filmTitle = filmTitle;
     }
 
-    /**
-     * Gets the date and time of the showtime.
-     *
-     * @return the date and time
-     */
     public String getDateTime() {
       return dateTime;
     }
 
-    /**
-     * Sets the date and time of the showtime.
-     *
-     * @param dateTime the date and time to set
-     */
     public void setDateTime(String dateTime) {
       this.dateTime = dateTime;
     }
 
-    /**
-     * Gets the hall where the showtime is scheduled.
-     *
-     * @return the hall
-     */
     public Hall getHall() {
       return hall;
     }
 
-    /**
-     * Sets the hall where the showtime is scheduled.
-     *
-     * @param hall the hall to set
-     */
     public void setHall(Hall hall) {
       this.hall = hall;
     }
-  }
-
-  /**
-   * Filters showtimes in a hall by film title (JPQL).
-   *
-   * @param hallId the ID of the hall
-   * @param title the film title to search for
-   * @return a list of showtimes matching the film title
-   */
-  @GetMapping("/filter/title/{hallId}")
-  public List<Showtime> getShowtimesByTitle(@PathVariable Long hallId,
-                                            @RequestParam String title) {
-    return showtimeService.filterByTitle(hallId, title);
-  }
-
-  /**
-   * Filters showtimes in a hall by date (Native SQL).
-   *
-   * @param hallId the ID of the hall
-   * @param date the date to filter showtimes by (format: yyyy-MM-dd)
-   * @return a list of showtimes on the specified date
-   */
-  @GetMapping("/filter/date/{hallId}")
-  public List<Showtime> getShowtimesByDate(
-          @PathVariable Long hallId,
-          @RequestParam @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate date) {
-    return showtimeService.filterByDate(hallId, date);
   }
 }
