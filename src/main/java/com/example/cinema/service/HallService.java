@@ -81,4 +81,15 @@ public class HallService {
     }
     hallRepository.deleteById(hallId);
   }
+  /**
+   * Creates multiple cinema halls in bulk.
+   *
+   * @param halls list of halls to create
+   * @return list of created halls
+   */
+  public List<Hall> createHallsBulk(List<Hall> halls) {
+    return halls.stream()
+            .map(this::createHall)
+            .toList();
+  }
 }
