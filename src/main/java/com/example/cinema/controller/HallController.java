@@ -118,6 +118,7 @@ public class HallController {
     hallService.deleteHall(hallId);
     return ResponseEntity.noContent().build();
   }
+
   /**
    * Creates multiple cinema halls in bulk.
    *
@@ -125,7 +126,8 @@ public class HallController {
    * @return ResponseEntity containing list of created halls
    */
   @PostMapping("/bulk")
-  @Operation(summary = "Create multiple halls", description = "Creates multiple cinema halls in one operation")
+  @Operation(summary = "Create multiple halls",
+          description = "Creates multiple cinema halls in one operation")
   @ApiResponse(responseCode = "201", description = "Halls created",
           content = @Content(schema = @Schema(implementation = Hall.class)))
   @ApiResponse(responseCode = "400", description = "Invalid input")
@@ -133,5 +135,4 @@ public class HallController {
     List<Hall> createdHalls = hallService.createHallsBulk(halls);
     return ResponseEntity.status(HttpStatus.CREATED).body(createdHalls);
   }
-
 }

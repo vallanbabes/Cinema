@@ -81,6 +81,7 @@ public class HallService {
     }
     hallRepository.deleteById(hallId);
   }
+
   /**
    * Creates multiple cinema halls in bulk.
    *

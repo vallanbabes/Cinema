@@ -1,17 +1,17 @@
-2025-05-07T18:11:17.240+03:00  INFO 20520 --- [Cinema] [main] c.example.cinema.CinemaApplicationTests  : Starting CinemaApplicationTests using Java 23.0.2 with PID 20520 (started by vallanbabes in C:\Users\vallanbabes\IdeaProjects\Cinema)
-2025-05-07T18:11:17.255+03:00 DEBUG 20520 --- [Cinema] [main] c.example.cinema.CinemaApplicationTests  : Running with Spring Boot v3.4.2, Spring v6.2.2
-2025-05-07T18:11:17.256+03:00  INFO 20520 --- [Cinema] [main] c.example.cinema.CinemaApplicationTests  : No active profile set, falling back to 1 default profile: "default"
-2025-05-07T18:11:18.903+03:00  INFO 20520 --- [Cinema] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-05-07T18:11:19.006+03:00  INFO 20520 --- [Cinema] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 81 ms. Found 2 JPA repository interfaces.
-2025-05-07T18:11:20.206+03:00  INFO 20520 --- [Cinema] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-05-07T18:11:20.317+03:00  INFO 20520 --- [Cinema] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.5.Final
-2025-05-07T18:11:20.391+03:00  INFO 20520 --- [Cinema] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-05-07T18:11:20.902+03:00  INFO 20520 --- [Cinema] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-05-07T18:11:20.957+03:00  INFO 20520 --- [Cinema] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-05-07T18:11:21.475+03:00  INFO 20520 --- [Cinema] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@74d56a25
-2025-05-07T18:11:21.486+03:00  INFO 20520 --- [Cinema] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-05-07T18:11:21.621+03:00  WARN 20520 --- [Cinema] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-05-07T18:11:21.677+03:00  INFO 20520 --- [Cinema] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2025-05-10T17:27:05.872+03:00  INFO 14824 --- [Cinema] [main] c.example.cinema.CinemaApplicationTests  : Starting CinemaApplicationTests using Java 23.0.2 with PID 14824 (started by vallanbabes in C:\Users\vallanbabes\IdeaProjects\Cinema)
+2025-05-10T17:27:05.889+03:00 DEBUG 14824 --- [Cinema] [main] c.example.cinema.CinemaApplicationTests  : Running with Spring Boot v3.4.2, Spring v6.2.2
+2025-05-10T17:27:05.891+03:00  INFO 14824 --- [Cinema] [main] c.example.cinema.CinemaApplicationTests  : No active profile set, falling back to 1 default profile: "default"
+2025-05-10T17:27:08.139+03:00  INFO 14824 --- [Cinema] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-10T17:27:08.275+03:00  INFO 14824 --- [Cinema] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 113 ms. Found 2 JPA repository interfaces.
+2025-05-10T17:27:09.787+03:00  INFO 14824 --- [Cinema] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-10T17:27:09.967+03:00  INFO 14824 --- [Cinema] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.5.Final
+2025-05-10T17:27:10.056+03:00  INFO 14824 --- [Cinema] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-10T17:27:11.064+03:00  INFO 14824 --- [Cinema] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-10T17:27:11.171+03:00  INFO 14824 --- [Cinema] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-05-10T17:27:11.865+03:00  INFO 14824 --- [Cinema] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@281fc512
+2025-05-10T17:27:11.870+03:00  INFO 14824 --- [Cinema] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-05-10T17:27:11.994+03:00  WARN 14824 --- [Cinema] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-10T17:27:12.046+03:00  INFO 14824 --- [Cinema] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 17.4
@@ -19,29 +19,29 @@
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-05-07T18:11:24.660+03:00  INFO 20520 --- [Cinema] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-05-07T18:11:25.130+03:00  INFO 20520 --- [Cinema] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-05-07T18:11:26.346+03:00  INFO 20520 --- [Cinema] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
-2025-05-07T18:11:28.195+03:00  WARN 20520 --- [Cinema] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-05-07T18:11:28.247+03:00  INFO 20520 --- [Cinema] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
-2025-05-07T18:11:29.128+03:00  INFO 20520 --- [Cinema] [main] c.example.cinema.CinemaApplicationTests  : Started CinemaApplicationTests in 12.471 seconds (process running for 15.231)
-2025-05-07T18:11:31.380+03:00  INFO 20520 --- [Cinema] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-05-07T18:11:31.385+03:00  INFO 20520 --- [Cinema] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-05-07T18:11:31.394+03:00  INFO 20520 --- [Cinema] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-05-07T18:12:37.749+03:00  INFO 22488 --- [Cinema] [main] c.example.cinema.CinemaApplicationTests  : Starting CinemaApplicationTests using Java 23.0.2 with PID 22488 (started by vallanbabes in C:\Users\vallanbabes\IdeaProjects\Cinema)
-2025-05-07T18:12:37.750+03:00 DEBUG 22488 --- [Cinema] [main] c.example.cinema.CinemaApplicationTests  : Running with Spring Boot v3.4.2, Spring v6.2.2
-2025-05-07T18:12:37.751+03:00  INFO 22488 --- [Cinema] [main] c.example.cinema.CinemaApplicationTests  : No active profile set, falling back to 1 default profile: "default"
-2025-05-07T18:12:39.211+03:00  INFO 22488 --- [Cinema] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-05-07T18:12:39.295+03:00  INFO 22488 --- [Cinema] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 67 ms. Found 2 JPA repository interfaces.
-2025-05-07T18:12:40.413+03:00  INFO 22488 --- [Cinema] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-05-07T18:12:40.500+03:00  INFO 22488 --- [Cinema] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.5.Final
-2025-05-07T18:12:40.564+03:00  INFO 22488 --- [Cinema] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-05-07T18:12:41.012+03:00  INFO 22488 --- [Cinema] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-05-07T18:12:41.060+03:00  INFO 22488 --- [Cinema] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-05-07T18:12:41.345+03:00  INFO 22488 --- [Cinema] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5a414ed4
-2025-05-07T18:12:41.348+03:00  INFO 22488 --- [Cinema] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-05-07T18:12:41.416+03:00  WARN 22488 --- [Cinema] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-05-07T18:12:41.465+03:00  INFO 22488 --- [Cinema] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2025-05-10T17:27:14.580+03:00  INFO 14824 --- [Cinema] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-10T17:27:14.822+03:00  INFO 14824 --- [Cinema] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-10T17:27:15.602+03:00  INFO 14824 --- [Cinema] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-05-10T17:27:18.032+03:00  WARN 14824 --- [Cinema] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-10T17:27:18.082+03:00  INFO 14824 --- [Cinema] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2025-05-10T17:27:19.081+03:00  INFO 14824 --- [Cinema] [main] c.example.cinema.CinemaApplicationTests  : Started CinemaApplicationTests in 14.061 seconds (process running for 18.169)
+2025-05-10T17:27:20.871+03:00  INFO 14824 --- [Cinema] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-10T17:27:20.876+03:00  INFO 14824 --- [Cinema] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-05-10T17:27:20.883+03:00  INFO 14824 --- [Cinema] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-05-10T17:30:00.794+03:00  INFO 1148 --- [Cinema] [main] c.example.cinema.CinemaApplicationTests  : Starting CinemaApplicationTests using Java 23.0.2 with PID 1148 (started by vallanbabes in C:\Users\vallanbabes\IdeaProjects\Cinema)
+2025-05-10T17:30:00.796+03:00 DEBUG 1148 --- [Cinema] [main] c.example.cinema.CinemaApplicationTests  : Running with Spring Boot v3.4.2, Spring v6.2.2
+2025-05-10T17:30:00.797+03:00  INFO 1148 --- [Cinema] [main] c.example.cinema.CinemaApplicationTests  : No active profile set, falling back to 1 default profile: "default"
+2025-05-10T17:30:02.550+03:00  INFO 1148 --- [Cinema] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-10T17:30:02.659+03:00  INFO 1148 --- [Cinema] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 91 ms. Found 2 JPA repository interfaces.
+2025-05-10T17:30:03.856+03:00  INFO 1148 --- [Cinema] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-10T17:30:04.007+03:00  INFO 1148 --- [Cinema] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.5.Final
+2025-05-10T17:30:04.101+03:00  INFO 1148 --- [Cinema] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-10T17:30:04.744+03:00  INFO 1148 --- [Cinema] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-10T17:30:04.810+03:00  INFO 1148 --- [Cinema] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-05-10T17:30:05.292+03:00  INFO 1148 --- [Cinema] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5233d3e0
+2025-05-10T17:30:05.295+03:00  INFO 1148 --- [Cinema] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-05-10T17:30:05.398+03:00  WARN 1148 --- [Cinema] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-10T17:30:05.440+03:00  INFO 1148 --- [Cinema] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 17.4
@@ -49,29 +49,29 @@
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-05-07T18:12:43.372+03:00  INFO 22488 --- [Cinema] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-05-07T18:12:43.556+03:00  INFO 22488 --- [Cinema] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-05-07T18:12:44.352+03:00  INFO 22488 --- [Cinema] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
-2025-05-07T18:12:46.109+03:00  WARN 22488 --- [Cinema] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-05-07T18:12:46.158+03:00  INFO 22488 --- [Cinema] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
-2025-05-07T18:12:47.065+03:00  INFO 22488 --- [Cinema] [main] c.example.cinema.CinemaApplicationTests  : Started CinemaApplicationTests in 9.837 seconds (process running for 12.089)
-2025-05-07T18:12:48.972+03:00  INFO 22488 --- [Cinema] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-05-07T18:12:48.978+03:00  INFO 22488 --- [Cinema] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-05-07T18:12:48.984+03:00  INFO 22488 --- [Cinema] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-05-07T18:14:38.941+03:00  INFO 3952 --- [Cinema] [main] c.example.cinema.CinemaApplicationTests  : Starting CinemaApplicationTests using Java 23.0.2 with PID 3952 (started by vallanbabes in C:\Users\vallanbabes\IdeaProjects\Cinema)
-2025-05-07T18:14:38.943+03:00 DEBUG 3952 --- [Cinema] [main] c.example.cinema.CinemaApplicationTests  : Running with Spring Boot v3.4.2, Spring v6.2.2
-2025-05-07T18:14:38.944+03:00  INFO 3952 --- [Cinema] [main] c.example.cinema.CinemaApplicationTests  : No active profile set, falling back to 1 default profile: "default"
-2025-05-07T18:14:40.727+03:00  INFO 3952 --- [Cinema] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-05-07T18:14:40.873+03:00  INFO 3952 --- [Cinema] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 121 ms. Found 2 JPA repository interfaces.
-2025-05-07T18:14:41.962+03:00  INFO 3952 --- [Cinema] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-05-07T18:14:42.089+03:00  INFO 3952 --- [Cinema] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.5.Final
-2025-05-07T18:14:42.162+03:00  INFO 3952 --- [Cinema] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-05-07T18:14:42.744+03:00  INFO 3952 --- [Cinema] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-05-07T18:14:42.798+03:00  INFO 3952 --- [Cinema] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-05-07T18:14:43.331+03:00  INFO 3952 --- [Cinema] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@60640267
-2025-05-07T18:14:43.333+03:00  INFO 3952 --- [Cinema] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-05-07T18:14:43.422+03:00  WARN 3952 --- [Cinema] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-05-07T18:14:43.470+03:00  INFO 3952 --- [Cinema] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2025-05-10T17:30:07.232+03:00  INFO 1148 --- [Cinema] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-10T17:30:07.434+03:00  INFO 1148 --- [Cinema] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-10T17:30:08.138+03:00  INFO 1148 --- [Cinema] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-05-10T17:30:10.173+03:00  WARN 1148 --- [Cinema] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-10T17:30:10.225+03:00  INFO 1148 --- [Cinema] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2025-05-10T17:30:11.188+03:00  INFO 1148 --- [Cinema] [main] c.example.cinema.CinemaApplicationTests  : Started CinemaApplicationTests in 11.102 seconds (process running for 13.685)
+2025-05-10T17:30:13.826+03:00  INFO 1148 --- [Cinema] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-10T17:30:13.831+03:00  INFO 1148 --- [Cinema] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-05-10T17:30:13.835+03:00  INFO 1148 --- [Cinema] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-05-10T17:34:09.248+03:00  INFO 22220 --- [Cinema] [main] c.example.cinema.CinemaApplicationTests  : Starting CinemaApplicationTests using Java 23.0.2 with PID 22220 (started by vallanbabes in C:\Users\vallanbabes\IdeaProjects\Cinema)
+2025-05-10T17:34:09.250+03:00 DEBUG 22220 --- [Cinema] [main] c.example.cinema.CinemaApplicationTests  : Running with Spring Boot v3.4.2, Spring v6.2.2
+2025-05-10T17:34:09.251+03:00  INFO 22220 --- [Cinema] [main] c.example.cinema.CinemaApplicationTests  : No active profile set, falling back to 1 default profile: "default"
+2025-05-10T17:34:11.117+03:00  INFO 22220 --- [Cinema] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-10T17:34:11.238+03:00  INFO 22220 --- [Cinema] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 98 ms. Found 2 JPA repository interfaces.
+2025-05-10T17:34:12.557+03:00  INFO 22220 --- [Cinema] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-10T17:34:12.698+03:00  INFO 22220 --- [Cinema] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.5.Final
+2025-05-10T17:34:12.799+03:00  INFO 22220 --- [Cinema] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-10T17:34:13.385+03:00  INFO 22220 --- [Cinema] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-10T17:34:13.453+03:00  INFO 22220 --- [Cinema] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-05-10T17:34:13.824+03:00  INFO 22220 --- [Cinema] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3fa8e6ab
+2025-05-10T17:34:13.827+03:00  INFO 22220 --- [Cinema] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-05-10T17:34:13.935+03:00  WARN 22220 --- [Cinema] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-10T17:34:13.979+03:00  INFO 22220 --- [Cinema] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 17.4
@@ -79,29 +79,29 @@
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-05-07T18:14:45.581+03:00  INFO 3952 --- [Cinema] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-05-07T18:14:45.780+03:00  INFO 3952 --- [Cinema] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-05-07T18:14:46.556+03:00  INFO 3952 --- [Cinema] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
-2025-05-07T18:14:48.523+03:00  WARN 3952 --- [Cinema] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-05-07T18:14:48.568+03:00  INFO 3952 --- [Cinema] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
-2025-05-07T18:14:49.503+03:00  INFO 3952 --- [Cinema] [main] c.example.cinema.CinemaApplicationTests  : Started CinemaApplicationTests in 11.307 seconds (process running for 14.342)
-2025-05-07T18:14:50.872+03:00  INFO 3952 --- [Cinema] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-05-07T18:14:50.879+03:00  INFO 3952 --- [Cinema] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-05-07T18:14:50.886+03:00  INFO 3952 --- [Cinema] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-05-07T18:26:41.859+03:00  INFO 15928 --- [Cinema] [main] c.example.cinema.CinemaApplicationTests  : Starting CinemaApplicationTests using Java 23.0.2 with PID 15928 (started by vallanbabes in C:\Users\vallanbabes\IdeaProjects\Cinema)
-2025-05-07T18:26:41.861+03:00 DEBUG 15928 --- [Cinema] [main] c.example.cinema.CinemaApplicationTests  : Running with Spring Boot v3.4.2, Spring v6.2.2
-2025-05-07T18:26:41.862+03:00  INFO 15928 --- [Cinema] [main] c.example.cinema.CinemaApplicationTests  : No active profile set, falling back to 1 default profile: "default"
-2025-05-07T18:26:43.618+03:00  INFO 15928 --- [Cinema] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-05-07T18:26:43.760+03:00  INFO 15928 --- [Cinema] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 117 ms. Found 2 JPA repository interfaces.
-2025-05-07T18:26:44.849+03:00  INFO 15928 --- [Cinema] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-05-07T18:26:44.984+03:00  INFO 15928 --- [Cinema] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.5.Final
-2025-05-07T18:26:45.064+03:00  INFO 15928 --- [Cinema] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-05-07T18:26:45.654+03:00  INFO 15928 --- [Cinema] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-05-07T18:26:45.706+03:00  INFO 15928 --- [Cinema] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-05-07T18:26:46.124+03:00  INFO 15928 --- [Cinema] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@41bab3f4
-2025-05-07T18:26:46.128+03:00  INFO 15928 --- [Cinema] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-05-07T18:26:46.218+03:00  WARN 15928 --- [Cinema] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-05-07T18:26:46.268+03:00  INFO 15928 --- [Cinema] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2025-05-10T17:34:16.018+03:00  INFO 22220 --- [Cinema] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-10T17:34:16.232+03:00  INFO 22220 --- [Cinema] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-10T17:34:17.034+03:00  INFO 22220 --- [Cinema] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-05-10T17:34:19.044+03:00  WARN 22220 --- [Cinema] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-10T17:34:19.097+03:00  INFO 22220 --- [Cinema] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2025-05-10T17:34:20.124+03:00  INFO 22220 --- [Cinema] [main] c.example.cinema.CinemaApplicationTests  : Started CinemaApplicationTests in 11.59 seconds (process running for 14.11)
+2025-05-10T17:34:22.152+03:00  INFO 22220 --- [Cinema] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-10T17:34:22.156+03:00  INFO 22220 --- [Cinema] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-05-10T17:34:22.161+03:00  INFO 22220 --- [Cinema] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-05-10T17:46:44.654+03:00  INFO 9028 --- [Cinema] [main] c.example.cinema.CinemaApplicationTests  : Starting CinemaApplicationTests using Java 23.0.2 with PID 9028 (started by vallanbabes in C:\Users\vallanbabes\IdeaProjects\Cinema)
+2025-05-10T17:46:44.657+03:00 DEBUG 9028 --- [Cinema] [main] c.example.cinema.CinemaApplicationTests  : Running with Spring Boot v3.4.2, Spring v6.2.2
+2025-05-10T17:46:44.658+03:00  INFO 9028 --- [Cinema] [main] c.example.cinema.CinemaApplicationTests  : No active profile set, falling back to 1 default profile: "default"
+2025-05-10T17:46:46.448+03:00  INFO 9028 --- [Cinema] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-10T17:46:46.550+03:00  INFO 9028 --- [Cinema] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 85 ms. Found 2 JPA repository interfaces.
+2025-05-10T17:46:47.871+03:00  INFO 9028 --- [Cinema] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-10T17:46:48.000+03:00  INFO 9028 --- [Cinema] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.5.Final
+2025-05-10T17:46:48.078+03:00  INFO 9028 --- [Cinema] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-10T17:46:48.628+03:00  INFO 9028 --- [Cinema] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-10T17:46:48.684+03:00  INFO 9028 --- [Cinema] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-05-10T17:46:49.092+03:00  INFO 9028 --- [Cinema] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3fa8e6ab
+2025-05-10T17:46:49.097+03:00  INFO 9028 --- [Cinema] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-05-10T17:46:49.266+03:00  WARN 9028 --- [Cinema] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-10T17:46:49.335+03:00  INFO 9028 --- [Cinema] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 17.4
@@ -109,29 +109,29 @@
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-05-07T18:26:48.367+03:00  INFO 15928 --- [Cinema] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-05-07T18:26:48.575+03:00  INFO 15928 --- [Cinema] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-05-07T18:26:49.344+03:00  INFO 15928 --- [Cinema] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
-2025-05-07T18:26:51.421+03:00  WARN 15928 --- [Cinema] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-05-07T18:26:51.477+03:00  INFO 15928 --- [Cinema] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
-2025-05-07T18:26:52.533+03:00  INFO 15928 --- [Cinema] [main] c.example.cinema.CinemaApplicationTests  : Started CinemaApplicationTests in 11.383 seconds (process running for 14.159)
-2025-05-07T18:26:54.221+03:00  INFO 15928 --- [Cinema] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-05-07T18:26:54.227+03:00  INFO 15928 --- [Cinema] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-05-07T18:26:54.245+03:00  INFO 15928 --- [Cinema] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-05-07T18:28:14.925+03:00  INFO 21168 --- [Cinema] [main] c.example.cinema.CinemaApplicationTests  : Starting CinemaApplicationTests using Java 23.0.2 with PID 21168 (started by vallanbabes in C:\Users\vallanbabes\IdeaProjects\Cinema)
-2025-05-07T18:28:14.926+03:00 DEBUG 21168 --- [Cinema] [main] c.example.cinema.CinemaApplicationTests  : Running with Spring Boot v3.4.2, Spring v6.2.2
-2025-05-07T18:28:14.928+03:00  INFO 21168 --- [Cinema] [main] c.example.cinema.CinemaApplicationTests  : No active profile set, falling back to 1 default profile: "default"
-2025-05-07T18:28:16.883+03:00  INFO 21168 --- [Cinema] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-05-07T18:28:17.094+03:00  INFO 21168 --- [Cinema] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 170 ms. Found 2 JPA repository interfaces.
-2025-05-07T18:28:18.550+03:00  INFO 21168 --- [Cinema] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-05-07T18:28:18.683+03:00  INFO 21168 --- [Cinema] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.5.Final
-2025-05-07T18:28:18.769+03:00  INFO 21168 --- [Cinema] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-05-07T18:28:19.361+03:00  INFO 21168 --- [Cinema] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-05-07T18:28:19.414+03:00  INFO 21168 --- [Cinema] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-05-07T18:28:20.027+03:00  INFO 21168 --- [Cinema] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5cca49b5
-2025-05-07T18:28:20.031+03:00  INFO 21168 --- [Cinema] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-05-07T18:28:20.128+03:00  WARN 21168 --- [Cinema] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-05-07T18:28:20.173+03:00  INFO 21168 --- [Cinema] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2025-05-10T17:46:51.329+03:00  INFO 9028 --- [Cinema] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-10T17:46:51.560+03:00  INFO 9028 --- [Cinema] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-10T17:46:52.481+03:00  INFO 9028 --- [Cinema] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-05-10T17:46:54.539+03:00  WARN 9028 --- [Cinema] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-10T17:46:54.603+03:00  INFO 9028 --- [Cinema] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2025-05-10T17:46:55.639+03:00  INFO 9028 --- [Cinema] [main] c.example.cinema.CinemaApplicationTests  : Started CinemaApplicationTests in 11.628 seconds (process running for 14.313)
+2025-05-10T17:46:58.510+03:00  INFO 9028 --- [Cinema] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-10T17:46:58.518+03:00  INFO 9028 --- [Cinema] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-05-10T17:46:58.524+03:00  INFO 9028 --- [Cinema] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-05-10T19:33:50.029+03:00  INFO 14856 --- [Cinema] [main] c.example.cinema.CinemaApplicationTests  : Starting CinemaApplicationTests using Java 23.0.2 with PID 14856 (started by vallanbabes in C:\Users\vallanbabes\IdeaProjects\Cinema)
+2025-05-10T19:33:50.034+03:00 DEBUG 14856 --- [Cinema] [main] c.example.cinema.CinemaApplicationTests  : Running with Spring Boot v3.4.2, Spring v6.2.2
+2025-05-10T19:33:50.035+03:00  INFO 14856 --- [Cinema] [main] c.example.cinema.CinemaApplicationTests  : No active profile set, falling back to 1 default profile: "default"
+2025-05-10T19:33:52.542+03:00  INFO 14856 --- [Cinema] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-10T19:33:52.727+03:00  INFO 14856 --- [Cinema] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 150 ms. Found 2 JPA repository interfaces.
+2025-05-10T19:33:54.244+03:00  INFO 14856 --- [Cinema] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-10T19:33:54.440+03:00  INFO 14856 --- [Cinema] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.5.Final
+2025-05-10T19:33:54.561+03:00  INFO 14856 --- [Cinema] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-10T19:33:55.430+03:00  INFO 14856 --- [Cinema] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-10T19:33:55.504+03:00  INFO 14856 --- [Cinema] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-05-10T19:33:56.139+03:00  INFO 14856 --- [Cinema] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3a64e38d
+2025-05-10T19:33:56.144+03:00  INFO 14856 --- [Cinema] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-05-10T19:33:56.295+03:00  WARN 14856 --- [Cinema] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-10T19:33:56.353+03:00  INFO 14856 --- [Cinema] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 17.4
@@ -139,312 +139,12 @@
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-05-07T18:28:22.298+03:00  INFO 21168 --- [Cinema] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-05-07T18:28:22.482+03:00  INFO 21168 --- [Cinema] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-05-07T18:28:23.290+03:00  INFO 21168 --- [Cinema] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
-2025-05-07T18:28:25.279+03:00  WARN 21168 --- [Cinema] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-05-07T18:28:25.331+03:00  INFO 21168 --- [Cinema] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
-2025-05-07T18:28:26.318+03:00  INFO 21168 --- [Cinema] [main] c.example.cinema.CinemaApplicationTests  : Started CinemaApplicationTests in 12.156 seconds (process running for 15.779)
-2025-05-07T18:28:27.700+03:00  INFO 21168 --- [Cinema] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-05-07T18:28:27.706+03:00  INFO 21168 --- [Cinema] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-05-07T18:28:27.714+03:00  INFO 21168 --- [Cinema] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-05-07T18:30:00.251+03:00  INFO 8496 --- [Cinema] [main] c.example.cinema.CinemaApplicationTests  : Starting CinemaApplicationTests using Java 23.0.2 with PID 8496 (started by vallanbabes in C:\Users\vallanbabes\IdeaProjects\Cinema)
-2025-05-07T18:30:00.252+03:00 DEBUG 8496 --- [Cinema] [main] c.example.cinema.CinemaApplicationTests  : Running with Spring Boot v3.4.2, Spring v6.2.2
-2025-05-07T18:30:00.253+03:00  INFO 8496 --- [Cinema] [main] c.example.cinema.CinemaApplicationTests  : No active profile set, falling back to 1 default profile: "default"
-2025-05-07T18:30:02.192+03:00  INFO 8496 --- [Cinema] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-05-07T18:30:02.325+03:00  INFO 8496 --- [Cinema] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 111 ms. Found 2 JPA repository interfaces.
-2025-05-07T18:30:03.597+03:00  INFO 8496 --- [Cinema] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-05-07T18:30:03.689+03:00  INFO 8496 --- [Cinema] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.5.Final
-2025-05-07T18:30:03.760+03:00  INFO 8496 --- [Cinema] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-05-07T18:30:04.288+03:00  INFO 8496 --- [Cinema] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-05-07T18:30:04.341+03:00  INFO 8496 --- [Cinema] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-05-07T18:30:04.656+03:00  INFO 8496 --- [Cinema] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2655ad3b
-2025-05-07T18:30:04.660+03:00  INFO 8496 --- [Cinema] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-05-07T18:30:04.743+03:00  WARN 8496 --- [Cinema] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-05-07T18:30:04.811+03:00  INFO 8496 --- [Cinema] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 17.4
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-05-07T18:30:06.845+03:00  INFO 8496 --- [Cinema] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-05-07T18:30:07.059+03:00  INFO 8496 --- [Cinema] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-05-07T18:30:08.025+03:00  INFO 8496 --- [Cinema] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
-2025-05-07T18:30:10.590+03:00  WARN 8496 --- [Cinema] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-05-07T18:30:10.692+03:00  INFO 8496 --- [Cinema] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
-2025-05-07T18:30:12.003+03:00  INFO 8496 --- [Cinema] [main] c.example.cinema.CinemaApplicationTests  : Started CinemaApplicationTests in 12.424 seconds (process running for 15.344)
-2025-05-07T18:30:14.262+03:00  INFO 8496 --- [Cinema] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-05-07T18:30:14.270+03:00  INFO 8496 --- [Cinema] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-05-07T18:30:14.278+03:00  INFO 8496 --- [Cinema] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-05-07T18:30:44.016+03:00  INFO 20608 --- [Cinema] [main] c.example.cinema.CinemaApplicationTests  : Starting CinemaApplicationTests using Java 23.0.2 with PID 20608 (started by vallanbabes in C:\Users\vallanbabes\IdeaProjects\Cinema)
-2025-05-07T18:30:44.018+03:00 DEBUG 20608 --- [Cinema] [main] c.example.cinema.CinemaApplicationTests  : Running with Spring Boot v3.4.2, Spring v6.2.2
-2025-05-07T18:30:44.020+03:00  INFO 20608 --- [Cinema] [main] c.example.cinema.CinemaApplicationTests  : No active profile set, falling back to 1 default profile: "default"
-2025-05-07T18:30:45.636+03:00  INFO 20608 --- [Cinema] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-05-07T18:30:45.730+03:00  INFO 20608 --- [Cinema] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 75 ms. Found 2 JPA repository interfaces.
-2025-05-07T18:30:46.859+03:00  INFO 20608 --- [Cinema] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-05-07T18:30:46.955+03:00  INFO 20608 --- [Cinema] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.5.Final
-2025-05-07T18:30:47.026+03:00  INFO 20608 --- [Cinema] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-05-07T18:30:47.467+03:00  INFO 20608 --- [Cinema] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-05-07T18:30:47.511+03:00  INFO 20608 --- [Cinema] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-05-07T18:30:47.942+03:00  INFO 20608 --- [Cinema] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2655ad3b
-2025-05-07T18:30:47.945+03:00  INFO 20608 --- [Cinema] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-05-07T18:30:48.015+03:00  WARN 20608 --- [Cinema] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-05-07T18:30:48.072+03:00  INFO 20608 --- [Cinema] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 17.4
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-05-07T18:30:49.786+03:00  INFO 20608 --- [Cinema] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-05-07T18:30:50.065+03:00  INFO 20608 --- [Cinema] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-05-07T18:30:51.773+03:00  INFO 20608 --- [Cinema] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
-2025-05-07T18:30:54.074+03:00  WARN 20608 --- [Cinema] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-05-07T18:30:54.128+03:00  INFO 20608 --- [Cinema] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
-2025-05-07T18:30:55.141+03:00  INFO 20608 --- [Cinema] [main] c.example.cinema.CinemaApplicationTests  : Started CinemaApplicationTests in 11.704 seconds (process running for 13.991)
-2025-05-07T18:30:57.170+03:00  INFO 20608 --- [Cinema] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-05-07T18:30:57.175+03:00  INFO 20608 --- [Cinema] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-05-07T18:30:57.183+03:00  INFO 20608 --- [Cinema] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-05-07T18:35:13.910+03:00  INFO 2996 --- [Cinema] [main] c.example.cinema.CinemaApplicationTests  : Starting CinemaApplicationTests using Java 23.0.2 with PID 2996 (started by vallanbabes in C:\Users\vallanbabes\IdeaProjects\Cinema)
-2025-05-07T18:35:13.913+03:00 DEBUG 2996 --- [Cinema] [main] c.example.cinema.CinemaApplicationTests  : Running with Spring Boot v3.4.2, Spring v6.2.2
-2025-05-07T18:35:13.915+03:00  INFO 2996 --- [Cinema] [main] c.example.cinema.CinemaApplicationTests  : No active profile set, falling back to 1 default profile: "default"
-2025-05-07T18:35:15.969+03:00  INFO 2996 --- [Cinema] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-05-07T18:35:16.141+03:00  INFO 2996 --- [Cinema] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 144 ms. Found 2 JPA repository interfaces.
-2025-05-07T18:35:17.489+03:00  INFO 2996 --- [Cinema] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-05-07T18:35:17.645+03:00  INFO 2996 --- [Cinema] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.5.Final
-2025-05-07T18:35:17.744+03:00  INFO 2996 --- [Cinema] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-05-07T18:35:18.404+03:00  INFO 2996 --- [Cinema] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-05-07T18:35:18.468+03:00  INFO 2996 --- [Cinema] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-05-07T18:35:19.036+03:00  INFO 2996 --- [Cinema] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7f8ee098
-2025-05-07T18:35:19.039+03:00  INFO 2996 --- [Cinema] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-05-07T18:35:19.127+03:00  WARN 2996 --- [Cinema] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-05-07T18:35:19.193+03:00  INFO 2996 --- [Cinema] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 17.4
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-05-07T18:35:21.758+03:00  INFO 2996 --- [Cinema] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-05-07T18:35:22.040+03:00  INFO 2996 --- [Cinema] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-05-07T18:35:23.051+03:00  INFO 2996 --- [Cinema] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
-2025-05-07T18:35:25.298+03:00  WARN 2996 --- [Cinema] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-05-07T18:35:25.350+03:00  INFO 2996 --- [Cinema] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
-2025-05-07T18:35:26.487+03:00  INFO 2996 --- [Cinema] [main] c.example.cinema.CinemaApplicationTests  : Started CinemaApplicationTests in 13.437 seconds (process running for 16.549)
-2025-05-07T18:35:28.191+03:00  INFO 2996 --- [Cinema] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-05-07T18:35:28.197+03:00  INFO 2996 --- [Cinema] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-05-07T18:35:28.215+03:00  INFO 2996 --- [Cinema] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-05-07T18:40:35.385+03:00  INFO 22224 --- [Cinema] [main] c.example.cinema.CinemaApplicationTests  : Starting CinemaApplicationTests using Java 23.0.2 with PID 22224 (started by vallanbabes in C:\Users\vallanbabes\IdeaProjects\Cinema)
-2025-05-07T18:40:35.388+03:00 DEBUG 22224 --- [Cinema] [main] c.example.cinema.CinemaApplicationTests  : Running with Spring Boot v3.4.2, Spring v6.2.2
-2025-05-07T18:40:35.389+03:00  INFO 22224 --- [Cinema] [main] c.example.cinema.CinemaApplicationTests  : No active profile set, falling back to 1 default profile: "default"
-2025-05-07T18:40:37.125+03:00  INFO 22224 --- [Cinema] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-05-07T18:40:37.272+03:00  INFO 22224 --- [Cinema] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 121 ms. Found 2 JPA repository interfaces.
-2025-05-07T18:40:38.388+03:00  INFO 22224 --- [Cinema] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-05-07T18:40:38.516+03:00  INFO 22224 --- [Cinema] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.5.Final
-2025-05-07T18:40:38.582+03:00  INFO 22224 --- [Cinema] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-05-07T18:40:39.145+03:00  INFO 22224 --- [Cinema] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-05-07T18:40:39.201+03:00  INFO 22224 --- [Cinema] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-05-07T18:40:39.628+03:00  INFO 22224 --- [Cinema] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1abfbeb8
-2025-05-07T18:40:39.632+03:00  INFO 22224 --- [Cinema] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-05-07T18:40:39.715+03:00  WARN 22224 --- [Cinema] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-05-07T18:40:39.761+03:00  INFO 22224 --- [Cinema] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 17.4
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-05-07T18:40:41.897+03:00  INFO 22224 --- [Cinema] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-05-07T18:40:42.112+03:00  INFO 22224 --- [Cinema] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-05-07T18:40:42.917+03:00  INFO 22224 --- [Cinema] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
-2025-05-07T18:40:44.981+03:00  WARN 22224 --- [Cinema] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-05-07T18:40:45.049+03:00  INFO 22224 --- [Cinema] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
-2025-05-07T18:40:46.137+03:00  INFO 22224 --- [Cinema] [main] c.example.cinema.CinemaApplicationTests  : Started CinemaApplicationTests in 11.511 seconds (process running for 14.54)
-2025-05-07T18:40:47.707+03:00  INFO 22224 --- [Cinema] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-05-07T18:40:47.712+03:00  INFO 22224 --- [Cinema] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-05-07T18:40:47.719+03:00  INFO 22224 --- [Cinema] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-05-07T18:45:33.512+03:00  INFO 10844 --- [Cinema] [main] c.example.cinema.CinemaApplicationTests  : Starting CinemaApplicationTests using Java 23.0.2 with PID 10844 (started by vallanbabes in C:\Users\vallanbabes\IdeaProjects\Cinema)
-2025-05-07T18:45:33.514+03:00 DEBUG 10844 --- [Cinema] [main] c.example.cinema.CinemaApplicationTests  : Running with Spring Boot v3.4.2, Spring v6.2.2
-2025-05-07T18:45:33.516+03:00  INFO 10844 --- [Cinema] [main] c.example.cinema.CinemaApplicationTests  : No active profile set, falling back to 1 default profile: "default"
-2025-05-07T18:45:35.391+03:00  INFO 10844 --- [Cinema] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-05-07T18:45:35.548+03:00  INFO 10844 --- [Cinema] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 129 ms. Found 2 JPA repository interfaces.
-2025-05-07T18:45:36.684+03:00  INFO 10844 --- [Cinema] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-05-07T18:45:36.818+03:00  INFO 10844 --- [Cinema] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.5.Final
-2025-05-07T18:45:36.909+03:00  INFO 10844 --- [Cinema] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-05-07T18:45:37.516+03:00  INFO 10844 --- [Cinema] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-05-07T18:45:37.572+03:00  INFO 10844 --- [Cinema] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-05-07T18:45:38.108+03:00  INFO 10844 --- [Cinema] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6017fe22
-2025-05-07T18:45:38.112+03:00  INFO 10844 --- [Cinema] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-05-07T18:45:38.198+03:00  WARN 10844 --- [Cinema] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-05-07T18:45:38.263+03:00  INFO 10844 --- [Cinema] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 17.4
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-05-07T18:45:40.476+03:00  INFO 10844 --- [Cinema] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-05-07T18:45:40.670+03:00  INFO 10844 --- [Cinema] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-05-07T18:45:41.534+03:00  INFO 10844 --- [Cinema] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
-2025-05-07T18:45:43.740+03:00  WARN 10844 --- [Cinema] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-05-07T18:45:43.794+03:00  INFO 10844 --- [Cinema] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
-2025-05-07T18:45:44.855+03:00  INFO 10844 --- [Cinema] [main] c.example.cinema.CinemaApplicationTests  : Started CinemaApplicationTests in 12.128 seconds (process running for 15.068)
-2025-05-07T18:45:46.518+03:00  INFO 10844 --- [Cinema] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-05-07T18:45:46.524+03:00  INFO 10844 --- [Cinema] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-05-07T18:45:46.537+03:00  INFO 10844 --- [Cinema] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-05-07T18:47:55.118+03:00  INFO 5756 --- [Cinema] [main] c.example.cinema.CinemaApplicationTests  : Starting CinemaApplicationTests using Java 23.0.2 with PID 5756 (started by vallanbabes in C:\Users\vallanbabes\IdeaProjects\Cinema)
-2025-05-07T18:47:55.120+03:00 DEBUG 5756 --- [Cinema] [main] c.example.cinema.CinemaApplicationTests  : Running with Spring Boot v3.4.2, Spring v6.2.2
-2025-05-07T18:47:55.121+03:00  INFO 5756 --- [Cinema] [main] c.example.cinema.CinemaApplicationTests  : No active profile set, falling back to 1 default profile: "default"
-2025-05-07T18:47:57.030+03:00  INFO 5756 --- [Cinema] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-05-07T18:47:57.170+03:00  INFO 5756 --- [Cinema] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 120 ms. Found 2 JPA repository interfaces.
-2025-05-07T18:47:58.324+03:00  INFO 5756 --- [Cinema] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-05-07T18:47:58.457+03:00  INFO 5756 --- [Cinema] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.5.Final
-2025-05-07T18:47:58.529+03:00  INFO 5756 --- [Cinema] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-05-07T18:47:59.117+03:00  INFO 5756 --- [Cinema] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-05-07T18:47:59.176+03:00  INFO 5756 --- [Cinema] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-05-07T18:47:59.728+03:00  INFO 5756 --- [Cinema] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@78df4f3
-2025-05-07T18:47:59.732+03:00  INFO 5756 --- [Cinema] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-05-07T18:47:59.821+03:00  WARN 5756 --- [Cinema] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-05-07T18:47:59.870+03:00  INFO 5756 --- [Cinema] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 17.4
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-05-07T18:48:02.119+03:00  INFO 5756 --- [Cinema] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-05-07T18:48:02.337+03:00  INFO 5756 --- [Cinema] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-05-07T18:48:03.217+03:00  INFO 5756 --- [Cinema] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
-2025-05-07T18:48:05.404+03:00  WARN 5756 --- [Cinema] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-05-07T18:48:05.456+03:00  INFO 5756 --- [Cinema] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
-2025-05-07T18:48:06.477+03:00  INFO 5756 --- [Cinema] [main] c.example.cinema.CinemaApplicationTests  : Started CinemaApplicationTests in 12.14 seconds (process running for 15.162)
-2025-05-07T18:48:07.960+03:00  INFO 5756 --- [Cinema] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-05-07T18:48:07.967+03:00  INFO 5756 --- [Cinema] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-05-07T18:48:07.977+03:00  INFO 5756 --- [Cinema] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-05-07T18:48:31.943+03:00  INFO 16088 --- [Cinema] [main] c.example.cinema.CinemaApplicationTests  : Starting CinemaApplicationTests using Java 23.0.2 with PID 16088 (started by vallanbabes in C:\Users\vallanbabes\IdeaProjects\Cinema)
-2025-05-07T18:48:31.944+03:00 DEBUG 16088 --- [Cinema] [main] c.example.cinema.CinemaApplicationTests  : Running with Spring Boot v3.4.2, Spring v6.2.2
-2025-05-07T18:48:31.946+03:00  INFO 16088 --- [Cinema] [main] c.example.cinema.CinemaApplicationTests  : No active profile set, falling back to 1 default profile: "default"
-2025-05-07T18:48:33.512+03:00  INFO 16088 --- [Cinema] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-05-07T18:48:33.610+03:00  INFO 16088 --- [Cinema] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 77 ms. Found 2 JPA repository interfaces.
-2025-05-07T18:48:34.750+03:00  INFO 16088 --- [Cinema] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-05-07T18:48:34.844+03:00  INFO 16088 --- [Cinema] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.5.Final
-2025-05-07T18:48:34.914+03:00  INFO 16088 --- [Cinema] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-05-07T18:48:35.369+03:00  INFO 16088 --- [Cinema] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-05-07T18:48:35.420+03:00  INFO 16088 --- [Cinema] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-05-07T18:48:35.742+03:00  INFO 16088 --- [Cinema] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@78e469ac
-2025-05-07T18:48:35.748+03:00  INFO 16088 --- [Cinema] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-05-07T18:48:35.841+03:00  WARN 16088 --- [Cinema] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-05-07T18:48:35.904+03:00  INFO 16088 --- [Cinema] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 17.4
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-05-07T18:48:37.709+03:00  INFO 16088 --- [Cinema] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-05-07T18:48:37.892+03:00  INFO 16088 --- [Cinema] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-05-07T18:48:38.765+03:00  INFO 16088 --- [Cinema] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
-2025-05-07T18:48:40.680+03:00  WARN 16088 --- [Cinema] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-05-07T18:48:40.732+03:00  INFO 16088 --- [Cinema] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
-2025-05-07T18:48:41.832+03:00  INFO 16088 --- [Cinema] [main] c.example.cinema.CinemaApplicationTests  : Started CinemaApplicationTests in 10.462 seconds (process running for 12.954)
-2025-05-07T18:48:43.834+03:00  INFO 16088 --- [Cinema] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-05-07T18:48:43.839+03:00  INFO 16088 --- [Cinema] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-05-07T18:48:43.847+03:00  INFO 16088 --- [Cinema] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-05-07T18:49:29.196+03:00  INFO 11192 --- [Cinema] [main] c.example.cinema.CinemaApplicationTests  : Starting CinemaApplicationTests using Java 23.0.2 with PID 11192 (started by vallanbabes in C:\Users\vallanbabes\IdeaProjects\Cinema)
-2025-05-07T18:49:29.198+03:00 DEBUG 11192 --- [Cinema] [main] c.example.cinema.CinemaApplicationTests  : Running with Spring Boot v3.4.2, Spring v6.2.2
-2025-05-07T18:49:29.199+03:00  INFO 11192 --- [Cinema] [main] c.example.cinema.CinemaApplicationTests  : No active profile set, falling back to 1 default profile: "default"
-2025-05-07T18:49:30.740+03:00  INFO 11192 --- [Cinema] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-05-07T18:49:30.840+03:00  INFO 11192 --- [Cinema] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 79 ms. Found 2 JPA repository interfaces.
-2025-05-07T18:49:31.989+03:00  INFO 11192 --- [Cinema] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-05-07T18:49:32.095+03:00  INFO 11192 --- [Cinema] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.5.Final
-2025-05-07T18:49:32.170+03:00  INFO 11192 --- [Cinema] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-05-07T18:49:32.652+03:00  INFO 11192 --- [Cinema] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-05-07T18:49:32.703+03:00  INFO 11192 --- [Cinema] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-05-07T18:49:33.029+03:00  INFO 11192 --- [Cinema] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6f279a75
-2025-05-07T18:49:33.034+03:00  INFO 11192 --- [Cinema] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-05-07T18:49:33.117+03:00  WARN 11192 --- [Cinema] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-05-07T18:49:33.169+03:00  INFO 11192 --- [Cinema] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 17.4
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-05-07T18:49:34.979+03:00  INFO 11192 --- [Cinema] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-05-07T18:49:35.179+03:00  INFO 11192 --- [Cinema] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-05-07T18:49:36.036+03:00  INFO 11192 --- [Cinema] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
-2025-05-07T18:49:38.013+03:00  WARN 11192 --- [Cinema] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-05-07T18:49:38.071+03:00  INFO 11192 --- [Cinema] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
-2025-05-07T18:49:39.244+03:00  INFO 11192 --- [Cinema] [main] c.example.cinema.CinemaApplicationTests  : Started CinemaApplicationTests in 10.629 seconds (process running for 13.175)
-2025-05-07T18:49:44.279+03:00  INFO 11192 --- [Cinema] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-05-07T18:49:44.288+03:00  INFO 11192 --- [Cinema] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-05-07T18:49:44.314+03:00  INFO 11192 --- [Cinema] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-05-07T18:52:22.580+03:00  INFO 7516 --- [Cinema] [main] c.example.cinema.CinemaApplicationTests  : Starting CinemaApplicationTests using Java 23.0.2 with PID 7516 (started by vallanbabes in C:\Users\vallanbabes\IdeaProjects\Cinema)
-2025-05-07T18:52:22.582+03:00 DEBUG 7516 --- [Cinema] [main] c.example.cinema.CinemaApplicationTests  : Running with Spring Boot v3.4.2, Spring v6.2.2
-2025-05-07T18:52:22.583+03:00  INFO 7516 --- [Cinema] [main] c.example.cinema.CinemaApplicationTests  : No active profile set, falling back to 1 default profile: "default"
-2025-05-07T18:52:24.154+03:00  INFO 7516 --- [Cinema] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-05-07T18:52:24.243+03:00  INFO 7516 --- [Cinema] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 71 ms. Found 2 JPA repository interfaces.
-2025-05-07T18:52:25.452+03:00  INFO 7516 --- [Cinema] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-05-07T18:52:25.541+03:00  INFO 7516 --- [Cinema] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.5.Final
-2025-05-07T18:52:25.605+03:00  INFO 7516 --- [Cinema] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-05-07T18:52:26.105+03:00  INFO 7516 --- [Cinema] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-05-07T18:52:26.159+03:00  INFO 7516 --- [Cinema] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-05-07T18:52:26.582+03:00  INFO 7516 --- [Cinema] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@37884b27
-2025-05-07T18:52:26.587+03:00  INFO 7516 --- [Cinema] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-05-07T18:52:26.681+03:00  WARN 7516 --- [Cinema] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-05-07T18:52:26.735+03:00  INFO 7516 --- [Cinema] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 17.4
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-05-07T18:52:28.683+03:00  INFO 7516 --- [Cinema] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-05-07T18:52:28.885+03:00  INFO 7516 --- [Cinema] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-05-07T18:52:29.757+03:00  INFO 7516 --- [Cinema] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
-2025-05-07T18:52:31.648+03:00  WARN 7516 --- [Cinema] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-05-07T18:52:31.728+03:00  INFO 7516 --- [Cinema] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
-2025-05-07T18:52:32.686+03:00  INFO 7516 --- [Cinema] [main] c.example.cinema.CinemaApplicationTests  : Started CinemaApplicationTests in 10.735 seconds (process running for 13.33)
-2025-05-07T18:52:34.660+03:00  INFO 7516 --- [Cinema] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-05-07T18:52:34.668+03:00  INFO 7516 --- [Cinema] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-05-07T18:52:34.677+03:00  INFO 7516 --- [Cinema] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-05-07T18:55:25.102+03:00  INFO 5652 --- [Cinema] [main] c.example.cinema.CinemaApplicationTests  : Starting CinemaApplicationTests using Java 23.0.2 with PID 5652 (started by vallanbabes in C:\Users\vallanbabes\IdeaProjects\Cinema)
-2025-05-07T18:55:25.104+03:00 DEBUG 5652 --- [Cinema] [main] c.example.cinema.CinemaApplicationTests  : Running with Spring Boot v3.4.2, Spring v6.2.2
-2025-05-07T18:55:25.105+03:00  INFO 5652 --- [Cinema] [main] c.example.cinema.CinemaApplicationTests  : No active profile set, falling back to 1 default profile: "default"
-2025-05-07T18:55:26.929+03:00  INFO 5652 --- [Cinema] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-05-07T18:55:27.066+03:00  INFO 5652 --- [Cinema] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 113 ms. Found 2 JPA repository interfaces.
-2025-05-07T18:55:28.263+03:00  INFO 5652 --- [Cinema] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-05-07T18:55:28.471+03:00  INFO 5652 --- [Cinema] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.5.Final
-2025-05-07T18:55:28.564+03:00  INFO 5652 --- [Cinema] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-05-07T18:55:29.149+03:00  INFO 5652 --- [Cinema] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-05-07T18:55:29.201+03:00  INFO 5652 --- [Cinema] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-05-07T18:55:29.675+03:00  INFO 5652 --- [Cinema] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2942956
-2025-05-07T18:55:29.679+03:00  INFO 5652 --- [Cinema] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-05-07T18:55:29.767+03:00  WARN 5652 --- [Cinema] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-05-07T18:55:29.827+03:00  INFO 5652 --- [Cinema] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 17.4
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-05-07T18:55:32.176+03:00  INFO 5652 --- [Cinema] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-05-07T18:55:32.389+03:00  INFO 5652 --- [Cinema] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-05-07T18:55:33.319+03:00  INFO 5652 --- [Cinema] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
-2025-05-07T18:55:35.517+03:00  WARN 5652 --- [Cinema] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-05-07T18:55:35.563+03:00  INFO 5652 --- [Cinema] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
-2025-05-07T18:55:36.547+03:00  INFO 5652 --- [Cinema] [main] c.example.cinema.CinemaApplicationTests  : Started CinemaApplicationTests in 12.189 seconds (process running for 15.175)
-2025-05-07T18:55:37.956+03:00  INFO 5652 --- [Cinema] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-05-07T18:55:37.965+03:00  INFO 5652 --- [Cinema] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-05-07T18:55:37.973+03:00  INFO 5652 --- [Cinema] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-05-10T19:33:59.324+03:00  INFO 14856 --- [Cinema] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-10T19:33:59.619+03:00  INFO 14856 --- [Cinema] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-10T19:34:00.806+03:00  INFO 14856 --- [Cinema] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-05-10T19:34:03.518+03:00  WARN 14856 --- [Cinema] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-10T19:34:03.593+03:00  INFO 14856 --- [Cinema] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2025-05-10T19:34:04.986+03:00  INFO 14856 --- [Cinema] [main] c.example.cinema.CinemaApplicationTests  : Started CinemaApplicationTests in 16.035 seconds (process running for 20.235)
+2025-05-10T19:34:06.943+03:00  INFO 14856 --- [Cinema] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-10T19:34:06.953+03:00  INFO 14856 --- [Cinema] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-05-10T19:34:06.966+03:00  INFO 14856 --- [Cinema] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

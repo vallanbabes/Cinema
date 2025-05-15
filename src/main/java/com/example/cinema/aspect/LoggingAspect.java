@@ -27,7 +27,9 @@ public class LoggingAspect {
    */
   @Before("execution(* com.example.cinema.controller.*.*(..))")
   public void logBefore(JoinPoint joinPoint) {
-    logger.info("Выполнение метода: {}", joinPoint.getSignature().toShortString());
+    if (logger.isInfoEnabled()) {
+      logger.info("Выполнение метода: {}", joinPoint.getSignature().toShortString());
+    }
   }
 
   /**
@@ -40,10 +42,12 @@ public class LoggingAspect {
           pointcut = "execution(* com.example.cinema.controller.*.*(..))",
           returning = "result")
   public void logAfterReturning(JoinPoint joinPoint, Object result) {
-    logger.info(
-            "Метод {} успешно выполнен. Результат: {}",
-            joinPoint.getSignature().toShortString(),
-            result != null ? result.toString() : "null");
+    if (logger.isInfoEnabled()) {
+      logger.info(
+              "Метод {} успешно выполнен. Результат: {}",
+              joinPoint.getSignature().toShortString(),
+              result != null ? result.toString() : "null");
+    }
   }
 
   /**
@@ -56,9 +60,11 @@ public class LoggingAspect {
           pointcut = "execution(* com.example.cinema.controller.*.*(..))",
           throwing = "error")
   public void logAfterThrowing(JoinPoint joinPoint, Throwable error) {
-    logger.error(
-            "Ошибка в методе: {}. Сообщение: {}",
-            joinPoint.getSignature().toShortString(),
-            error.getMessage());
+    if (logger.isErrorEnabled()) {
+      logger.error(
+              "Ошибка в методе: {}. Сообщение: {}",
+              joinPoint.getSignature().toShortString(),
+              error.getMessage());
+    }
   }
 }
