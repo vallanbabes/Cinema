@@ -15,14 +15,17 @@ import org.springframework.stereotype.Service;
 public class HallService {
 
   private final HallRepository hallRepository;
+  private final VisitCounterService visitCounterService;
 
   /**
    * Constructs a HallService with the specified HallRepository.
    *
    * @param hallRepository the repository for hall data access
    */
-  public HallService(HallRepository hallRepository) {
+  public HallService(HallRepository hallRepository,
+                     VisitCounterService visitCounterService) {
     this.hallRepository = hallRepository;
+    this.visitCounterService = visitCounterService;
   }
 
   /**
@@ -31,6 +34,7 @@ public class HallService {
    * @return list of all halls
    */
   public List<Hall> getAllHalls() {
+    visitCounterService.increment();
     return hallRepository.findAll();
   }
 

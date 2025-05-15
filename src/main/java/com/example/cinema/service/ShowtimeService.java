@@ -24,6 +24,7 @@ public class ShowtimeService {
   private final HallRepository hallRepository;
   private final ShowtimeCache showtimeCache;
 
+
   /**
    * Constructs a ShowtimeService with the specified repositories and cache.
    *

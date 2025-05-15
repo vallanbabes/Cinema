@@ -1,93 +1,64 @@
 package com.example.cinema.controller;
 
+import com.example.cinema.model.LogObject;
+import com.example.cinema.service.LogService;
 import io.swagger.v3.oas.annotations.Operation;
-import io.swagger.v3.oas.annotations.Parameter;
-import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
-import java.time.format.DateTimeParseException;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
-import org.springframework.http.MediaType;
+import java.util.HashMap;
+import java.util.Map;
+import org.springframework.core.io.Resource;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-/**
- * Контроллер для работы с лог-файлами приложения.
- * Предоставляет API для чтения и фильтрации логов.
- */
 @RestController
 @RequestMapping("/api/logs")
-@Tag(name = "Log Controller", description = "API для работы с лог-файлами")
+
+@Tag(name = "Логи", description = "Управление логами")
 public class LogController {
 
-  private static final String LOG_FILE_PATH = "./cinema.log";
-  private static final DateTimeFormatter DATE_FORMATTER =
-          DateTimeFormatter.ofPattern("yyyy-MM-dd");
+  private final LogService logService;
 
-  /**
-   * Возвращает логи за указанную дату.
-   *
-   * @param date дата в формате yyyy-MM-dd
-   * @return ResponseEntity с отфильтрованными логами или сообщением об ошибке
-   */
-  @GetMapping("/by-date")
+  public LogController(LogService logService) {
+    this.logService = logService;
+  }
+
+  @PostMapping("/create")
   @Operation(
-          summary = "Получить логи за дату",
-          description = "Возвращает логи за указанную дату")
-  @ApiResponse(
-          responseCode = "200",
-          description = "Логи успешно получены")
-  @ApiResponse(
-          responseCode = "400",
-          description = "Неверный формат даты")
-  @ApiResponse(
-          responseCode = "404",
-          description = "Логи не найдены")
-  public ResponseEntity<String> getLogsByDate(
-          @Parameter(
-                  description = "Дата в формате yyyy-MM-dd",
-                  example = "2023-10-01")
-          @RequestParam String date) {
+          summary = "Создать лог-файл асинхронно",
+          description = "Запускает генерацию лог-файла и возвращает его ID"
+  )
+  public ResponseEntity<Long> createLogFile(@RequestParam String date) {
+    Long id = logService.createLogAsync(date);
+    return ResponseEntity.ok(id);
+  }
 
-    try {
-      LocalDate.parse(date, DATE_FORMATTER);
-    } catch (DateTimeParseException e) {
-      return ResponseEntity.badRequest()
-              .body("Неверный формат даты. Используйте формат yyyy-MM-dd");
+  @GetMapping("/status/{id}")
+  @Operation(
+          summary = "Получить состояние создания лог-файла",
+          description = "Возвращает состояние создания лог-файла по ID"
+  )
+  public ResponseEntity<Map<String, String>> getStatus(@PathVariable Long id) {
+    LogObject logObject = logService.getStatus(id);
+    Map<String, String> response = new HashMap<>();
+    response.put("status", logObject.getStatus());
+    if (logObject.getErrorMessage() != null) {
+      response.put("error", logObject.getErrorMessage());
     }
+    return ResponseEntity.ok(response);
+  }
 
-    try {
-      Path logPath = Paths.get(LOG_FILE_PATH);
-      if (!Files.exists(logPath)) {
-        return ResponseEntity.notFound().build();
-      }
-
-      String logs;
-      try (Stream<String> lines = Files.lines(logPath)) {
-        logs = lines
-                .filter(line -> line.contains(date))
-                .collect(Collectors.joining("\n"));
-      }
-
-      if (logs.isEmpty()) {
-        return ResponseEntity.notFound().build();
-      }
-
-      return ResponseEntity.ok()
-              .contentType(MediaType.TEXT_PLAIN)
-              .body(logs);
-    } catch (IOException e) {
-      return ResponseEntity.internalServerError()
-              .body("Ошибка при чтении лог-файла");
-    }
+  @GetMapping("/download/{id}")
+  @Operation(
+          summary = "Скачать созданный лог-файл",
+          description = "Скачивает созданный лог-файл по ID"
+  )
+  public ResponseEntity<Resource> getLogFileById(@PathVariable Long id) throws IOException {
+    return logService.downloadCreatedLogs(id);
   }
 }

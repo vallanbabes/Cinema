@@ -11,6 +11,7 @@ import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
 
@@ -24,6 +25,9 @@ class HallServiceTest {
 
   @Mock
   private HallRepository hallRepository;
+
+  @Mock
+  private VisitCounterService visitCounterService;
 
   @InjectMocks
   private HallService hallService;
@@ -44,28 +48,48 @@ class HallServiceTest {
   }
 
   @Test
-  void getAllHalls_success() {
-    when(hallRepository.findAll()).thenReturn(List.of(hall));
+  void getAllHalls_success_shouldReturnListOfHallsAndIncrementCounter() {
+    // Arrange
+    Hall expectedHall = new Hall();
+    expectedHall.setName("Hall A");
 
+    doNothing().when(visitCounterService).increment();
+    when(hallRepository.findAll()).thenReturn(List.of(expectedHall));
+
+    // Act
     List<Hall> result = hallService.getAllHalls();
 
-    assertNotNull(result);
-    assertEquals(1, result.size());
-    assertEquals("Hall A", result.get(0).getName());
+    // Assert
+    assertNotNull(result, "Result should not be null");
+    assertEquals(1, result.size(), "Result list should contain exactly one hall");
+    assertEquals("Hall A", result.get(0).getName(), "Hall name should match");
+
+    // Verify interactions
+    verify(visitCounterService, times(1)).increment();
+    verify(hallRepository, times(1)).findAll();
   }
 
   @Test
-  void getAllHalls_emptyList() {
-    when(hallRepository.findAll()).thenReturn(List.of());
+  void getAllHalls_emptyList_shouldReturnEmptyListAndIncrementCounter() {
+    // Arrange
+    doNothing().when(visitCounterService).increment();
+    when(hallRepository.findAll()).thenReturn(Collections.emptyList());
 
+    // Act
     List<Hall> result = hallService.getAllHalls();
 
-    assertNotNull(result);
-    assertTrue(result.isEmpty());
+    // Assert
+    assertNotNull(result, "Result should not be null");
+    assertTrue(result.isEmpty(), "Result list should be empty");
+
+    // Verify interactions
+    verify(visitCounterService, times(1)).increment();
+    verify(hallRepository, times(1)).findAll();
   }
 
   @Test
   void createHall_success() {
+
     when(hallRepository.save(any(Hall.class))).thenReturn(hall);
 
     Hall result = hallService.createHall(hall);
