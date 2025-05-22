@@ -104,7 +104,10 @@ public class LogService {
       throw new ResourceNotFoundException("Не найден log файл");
     }
     if (!"COMPLETED".equals(logObject.getStatus())) {
-      throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "Логов ещё нет");
+      //throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "Логов ещё нет");
+      return ResponseEntity.status(HttpStatus. CONFLICT)
+              .header("Lof-Status", logObject.getStatus())
+              .build();
     }
 
     Path path = Paths.get(logObject.getFilePath());

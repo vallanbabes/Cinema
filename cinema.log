@@ -45,3 +45,256 @@
 22-05-2025 12:31:52 [INFO] - Closing JPA EntityManagerFactory for persistence unit 'default'
 22-05-2025 12:31:52 [INFO] - HikariPool-1 - Shutdown initiated...
 22-05-2025 12:31:52 [INFO] - HikariPool-1 - Shutdown completed.
+22-05-2025 13:08:47 [INFO] - Starting CinemaApplication using Java 23.0.2 with PID 20604 (C:\Users\vallanbabes\IdeaProjects\Cinema\target\classes started by vallanbabes in C:\Users\vallanbabes\IdeaProjects\Cinema)
+22-05-2025 13:08:47 [DEBUG] - Running with Spring Boot v3.4.2, Spring v6.2.2
+22-05-2025 13:08:47 [INFO] - No active profile set, falling back to 1 default profile: "default"
+22-05-2025 13:08:48 [INFO] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+22-05-2025 13:08:48 [INFO] - Finished Spring Data repository scanning in 53 ms. Found 2 JPA repository interfaces.
+22-05-2025 13:08:48 [INFO] - Tomcat initialized with port 8080 (http)
+22-05-2025 13:08:48 [INFO] - Starting service [Tomcat]
+22-05-2025 13:08:48 [INFO] - Starting Servlet engine: [Apache Tomcat/10.1.34]
+22-05-2025 13:08:49 [INFO] - Initializing Spring embedded WebApplicationContext
+22-05-2025 13:08:49 [INFO] - Root WebApplicationContext: initialization completed in 1483 ms
+22-05-2025 13:08:49 [INFO] - HHH000204: Processing PersistenceUnitInfo [name: default]
+22-05-2025 13:08:49 [INFO] - HHH000412: Hibernate ORM core version 6.6.5.Final
+22-05-2025 13:08:49 [INFO] - HHH000026: Second-level cache disabled
+22-05-2025 13:08:49 [INFO] - No LoadTimeWeaver setup: ignoring JPA class transformer
+22-05-2025 13:08:49 [INFO] - HikariPool-1 - Starting...
+22-05-2025 13:08:49 [INFO] - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3355168
+22-05-2025 13:08:49 [INFO] - HikariPool-1 - Start completed.
+22-05-2025 13:08:49 [WARN] - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+22-05-2025 13:08:49 [INFO] - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.4
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+22-05-2025 13:08:50 [INFO] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+22-05-2025 13:08:50 [INFO] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+22-05-2025 13:08:51 [INFO] - Hibernate is in classpath; If applicable, HQL parser will be used.
+22-05-2025 13:08:52 [WARN] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+22-05-2025 13:08:52 [INFO] - Adding welcome page: class path resource [static/index.html]
+22-05-2025 13:08:52 [INFO] - Tomcat started on port 8080 (http) with context path '/'
+22-05-2025 13:08:52 [INFO] - Started CinemaApplication in 5.585 seconds (process running for 6.317)
+22-05-2025 13:08:56 [INFO] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+22-05-2025 13:08:56 [INFO] - Initializing Servlet 'dispatcherServlet'
+22-05-2025 13:08:56 [INFO] - Completed initialization in 1 ms
+22-05-2025 13:08:56 [INFO] - Выполнение метода: LogController.createLogFile(..)
+22-05-2025 13:08:56 [INFO] - Метод LogController.createLogFile(..) успешно выполнен. Результат: <200 OK OK,1,[]>
+22-05-2025 13:08:58 [INFO] - Выполнение метода: LogController.getStatus(..)
+22-05-2025 13:08:58 [INFO] - Метод LogController.getStatus(..) успешно выполнен. Результат: <200 OK OK,{status=IN_PROGRESS},[]>
+22-05-2025 13:09:06 [ERROR] - Unexpected exception occurred invoking async method: public void com.example.cinema.service.LogService.createLogs(java.lang.Long,java.lang.String)
+org.springframework.web.server.ResponseStatusException: 404 NOT_FOUND "Нет логов за дату: 15-05-2025"
+	at com.example.cinema.service.LogService.createLogs(LogService.java:63)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:114)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+22-05-2025 13:09:09 [INFO] - Выполнение метода: LogController.getLogFileById(..)
+22-05-2025 13:09:09 [ERROR] - Ошибка в методе: LogController.getLogFileById(..). Сообщение: 400 BAD_REQUEST "Логов ещё нет"
+22-05-2025 13:09:09 [ERROR] - Внутренняя ошибка сервера: 400 BAD_REQUEST "Логов ещё нет"
+org.springframework.web.server.ResponseStatusException: 400 BAD_REQUEST "Логов ещё нет"
+	at com.example.cinema.service.LogService.downloadCreatedLogs(LogService.java:107)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:723)
+	at com.example.cinema.service.LogService$$SpringCGLIB$$1.downloadCreatedLogs(<generated>)
+	at com.example.cinema.controller.LogController.getLogFileById(LogController.java:62)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:57)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:58)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:727)
+	at com.example.cinema.controller.LogController$$SpringCGLIB$$0.getLogFileById(<generated>)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:257)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+22-05-2025 13:14:27 [INFO] - Commencing graceful shutdown. Waiting for active requests to complete
+22-05-2025 13:14:27 [INFO] - Graceful shutdown complete
+22-05-2025 13:14:27 [INFO] - Closing JPA EntityManagerFactory for persistence unit 'default'
+22-05-2025 13:14:27 [INFO] - HikariPool-1 - Shutdown initiated...
+22-05-2025 13:14:27 [INFO] - HikariPool-1 - Shutdown completed.
+22-05-2025 13:14:31 [INFO] - Starting CinemaApplication using Java 23.0.2 with PID 24712 (C:\Users\vallanbabes\IdeaProjects\Cinema\target\classes started by vallanbabes in C:\Users\vallanbabes\IdeaProjects\Cinema)
+22-05-2025 13:14:31 [DEBUG] - Running with Spring Boot v3.4.2, Spring v6.2.2
+22-05-2025 13:14:31 [INFO] - No active profile set, falling back to 1 default profile: "default"
+22-05-2025 13:14:32 [INFO] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+22-05-2025 13:14:32 [INFO] - Finished Spring Data repository scanning in 47 ms. Found 2 JPA repository interfaces.
+22-05-2025 13:14:32 [INFO] - Tomcat initialized with port 8080 (http)
+22-05-2025 13:14:32 [INFO] - Starting service [Tomcat]
+22-05-2025 13:14:32 [INFO] - Starting Servlet engine: [Apache Tomcat/10.1.34]
+22-05-2025 13:14:33 [INFO] - Initializing Spring embedded WebApplicationContext
+22-05-2025 13:14:33 [INFO] - Root WebApplicationContext: initialization completed in 1375 ms
+22-05-2025 13:14:33 [INFO] - HHH000204: Processing PersistenceUnitInfo [name: default]
+22-05-2025 13:14:33 [INFO] - HHH000412: Hibernate ORM core version 6.6.5.Final
+22-05-2025 13:14:33 [INFO] - HHH000026: Second-level cache disabled
+22-05-2025 13:14:33 [INFO] - No LoadTimeWeaver setup: ignoring JPA class transformer
+22-05-2025 13:14:33 [INFO] - HikariPool-1 - Starting...
+22-05-2025 13:14:33 [INFO] - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3d798e76
+22-05-2025 13:14:33 [INFO] - HikariPool-1 - Start completed.
+22-05-2025 13:14:33 [WARN] - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+22-05-2025 13:14:33 [INFO] - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.4
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+22-05-2025 13:14:34 [INFO] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+22-05-2025 13:14:34 [INFO] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+22-05-2025 13:14:35 [INFO] - Hibernate is in classpath; If applicable, HQL parser will be used.
+22-05-2025 13:14:35 [WARN] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+22-05-2025 13:14:35 [INFO] - Adding welcome page: class path resource [static/index.html]
+22-05-2025 13:14:36 [INFO] - Tomcat started on port 8080 (http) with context path '/'
+22-05-2025 13:14:36 [INFO] - Started CinemaApplication in 5.213 seconds (process running for 5.851)
+22-05-2025 13:14:47 [INFO] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+22-05-2025 13:14:47 [INFO] - Initializing Servlet 'dispatcherServlet'
+22-05-2025 13:14:47 [INFO] - Completed initialization in 1 ms
+22-05-2025 13:14:47 [INFO] - Выполнение метода: LogController.createLogFile(..)
+22-05-2025 13:14:47 [INFO] - Метод LogController.createLogFile(..) успешно выполнен. Результат: <200 OK OK,1,[]>
+22-05-2025 13:14:51 [INFO] - Выполнение метода: LogController.getStatus(..)
+22-05-2025 13:14:51 [INFO] - Метод LogController.getStatus(..) успешно выполнен. Результат: <200 OK OK,{status=IN_PROGRESS},[]>
+22-05-2025 13:14:54 [INFO] - Выполнение метода: LogController.getLogFileById(..)
+22-05-2025 13:14:54 [INFO] - Метод LogController.getLogFileById(..) успешно выполнен. Результат: <404 NOT_FOUND Not Found,[Lof-Status:"IN_PROGRESS"]>
+22-05-2025 13:14:57 [ERROR] - Unexpected exception occurred invoking async method: public void com.example.cinema.service.LogService.createLogs(java.lang.Long,java.lang.String)
+org.springframework.web.server.ResponseStatusException: 404 NOT_FOUND "Нет логов за дату: 15-05-2025"
+	at com.example.cinema.service.LogService.createLogs(LogService.java:63)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:114)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+22-05-2025 13:15:32 [INFO] - Commencing graceful shutdown. Waiting for active requests to complete
+22-05-2025 13:15:32 [INFO] - Graceful shutdown complete
+22-05-2025 13:15:32 [INFO] - Closing JPA EntityManagerFactory for persistence unit 'default'
+22-05-2025 13:15:32 [INFO] - HikariPool-1 - Shutdown initiated...
+22-05-2025 13:15:32 [INFO] - HikariPool-1 - Shutdown completed.
+22-05-2025 13:15:36 [INFO] - Starting CinemaApplication using Java 23.0.2 with PID 23376 (C:\Users\vallanbabes\IdeaProjects\Cinema\target\classes started by vallanbabes in C:\Users\vallanbabes\IdeaProjects\Cinema)
+22-05-2025 13:15:36 [DEBUG] - Running with Spring Boot v3.4.2, Spring v6.2.2
+22-05-2025 13:15:36 [INFO] - No active profile set, falling back to 1 default profile: "default"
+22-05-2025 13:15:37 [INFO] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+22-05-2025 13:15:37 [INFO] - Finished Spring Data repository scanning in 44 ms. Found 2 JPA repository interfaces.
+22-05-2025 13:15:37 [INFO] - Tomcat initialized with port 8080 (http)
+22-05-2025 13:15:37 [INFO] - Starting service [Tomcat]
+22-05-2025 13:15:37 [INFO] - Starting Servlet engine: [Apache Tomcat/10.1.34]
+22-05-2025 13:15:37 [INFO] - Initializing Spring embedded WebApplicationContext
+22-05-2025 13:15:37 [INFO] - Root WebApplicationContext: initialization completed in 1391 ms
+22-05-2025 13:15:37 [INFO] - HHH000204: Processing PersistenceUnitInfo [name: default]
+22-05-2025 13:15:37 [INFO] - HHH000412: Hibernate ORM core version 6.6.5.Final
+22-05-2025 13:15:37 [INFO] - HHH000026: Second-level cache disabled
+22-05-2025 13:15:38 [INFO] - No LoadTimeWeaver setup: ignoring JPA class transformer
+22-05-2025 13:15:38 [INFO] - HikariPool-1 - Starting...
+22-05-2025 13:15:38 [INFO] - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3e2d8623
+22-05-2025 13:15:38 [INFO] - HikariPool-1 - Start completed.
+22-05-2025 13:15:38 [WARN] - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+22-05-2025 13:15:38 [INFO] - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.4
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+22-05-2025 13:15:39 [INFO] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+22-05-2025 13:15:39 [INFO] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+22-05-2025 13:15:39 [INFO] - Hibernate is in classpath; If applicable, HQL parser will be used.
+22-05-2025 13:15:40 [WARN] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+22-05-2025 13:15:40 [INFO] - Adding welcome page: class path resource [static/index.html]
+22-05-2025 13:15:41 [INFO] - Tomcat started on port 8080 (http) with context path '/'
+22-05-2025 13:15:41 [INFO] - Started CinemaApplication in 5.392 seconds (process running for 6.029)
+22-05-2025 13:15:48 [INFO] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+22-05-2025 13:15:48 [INFO] - Initializing Servlet 'dispatcherServlet'
+22-05-2025 13:15:48 [INFO] - Completed initialization in 0 ms
+22-05-2025 13:15:48 [INFO] - Выполнение метода: LogController.getLogFileById(..)
+22-05-2025 13:15:48 [ERROR] - Ошибка в методе: LogController.getLogFileById(..). Сообщение: Не найден log файл
+22-05-2025 13:15:48 [ERROR] - Ресурс не найден: Не найден log файл
+22-05-2025 13:15:53 [INFO] - Выполнение метода: LogController.getLogFileById(..)
+22-05-2025 13:15:53 [ERROR] - Ошибка в методе: LogController.getLogFileById(..). Сообщение: Не найден log файл
+22-05-2025 13:15:53 [ERROR] - Ресурс не найден: Не найден log файл
+22-05-2025 13:16:00 [INFO] - Выполнение метода: LogController.createLogFile(..)
+22-05-2025 13:16:00 [INFO] - Метод LogController.createLogFile(..) успешно выполнен. Результат: <200 OK OK,1,[]>
+22-05-2025 13:16:04 [INFO] - Выполнение метода: LogController.getStatus(..)
+22-05-2025 13:16:04 [INFO] - Метод LogController.getStatus(..) успешно выполнен. Результат: <200 OK OK,{status=IN_PROGRESS},[]>
+22-05-2025 13:16:07 [INFO] - Выполнение метода: LogController.getLogFileById(..)
+22-05-2025 13:16:07 [INFO] - Метод LogController.getLogFileById(..) успешно выполнен. Результат: <409 CONFLICT Conflict,[Lof-Status:"IN_PROGRESS"]>
+22-05-2025 13:16:10 [ERROR] - Unexpected exception occurred invoking async method: public void com.example.cinema.service.LogService.createLogs(java.lang.Long,java.lang.String)
+org.springframework.web.server.ResponseStatusException: 404 NOT_FOUND "Нет логов за дату: 15-05-2025"
+	at com.example.cinema.service.LogService.createLogs(LogService.java:63)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:114)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
