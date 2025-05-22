@@ -1,20 +1,22 @@
-15-01-2023 Test log message15-05-2025 21:00:05 [INFO] - Closing JPA EntityManagerFactory for persistence unit 'default'
-15-05-2025 21:00:05 [INFO] - HikariPool-1 - Shutdown initiated...
-15-05-2025 21:00:05 [INFO] - HikariPool-1 - Shutdown completed.
-15-05-2025 21:07:34 [INFO] - Starting CinemaApplicationTests using Java 23.0.2 with PID 8996 (started by vallanbabes in C:\Users\vallanbabes\IdeaProjects\Cinema)
-15-05-2025 21:07:34 [DEBUG] - Running with Spring Boot v3.4.2, Spring v6.2.2
-15-05-2025 21:07:34 [INFO] - No active profile set, falling back to 1 default profile: "default"
-15-05-2025 21:07:35 [INFO] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-15-05-2025 21:07:35 [INFO] - Finished Spring Data repository scanning in 69 ms. Found 2 JPA repository interfaces.
-15-05-2025 21:07:36 [INFO] - HHH000204: Processing PersistenceUnitInfo [name: default]
-15-05-2025 21:07:36 [INFO] - HHH000412: Hibernate ORM core version 6.6.5.Final
-15-05-2025 21:07:37 [INFO] - HHH000026: Second-level cache disabled
-15-05-2025 21:07:37 [INFO] - No LoadTimeWeaver setup: ignoring JPA class transformer
-15-05-2025 21:07:37 [INFO] - HikariPool-1 - Starting...
-15-05-2025 21:07:37 [INFO] - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@33650678
-15-05-2025 21:07:37 [INFO] - HikariPool-1 - Start completed.
-15-05-2025 21:07:37 [WARN] - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-15-05-2025 21:07:37 [INFO] - HHH10001005: Database info:
+22-05-2025 12:13:23 [INFO] - Starting CinemaApplication using Java 23.0.2 with PID 13164 (C:\Users\vallanbabes\IdeaProjects\Cinema\target\classes started by vallanbabes in C:\Users\vallanbabes\IdeaProjects\Cinema)
+22-05-2025 12:13:23 [DEBUG] - Running with Spring Boot v3.4.2, Spring v6.2.2
+22-05-2025 12:13:23 [INFO] - No active profile set, falling back to 1 default profile: "default"
+22-05-2025 12:13:25 [INFO] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+22-05-2025 12:13:25 [INFO] - Finished Spring Data repository scanning in 127 ms. Found 2 JPA repository interfaces.
+22-05-2025 12:13:27 [INFO] - Tomcat initialized with port 8080 (http)
+22-05-2025 12:13:27 [INFO] - Starting service [Tomcat]
+22-05-2025 12:13:27 [INFO] - Starting Servlet engine: [Apache Tomcat/10.1.34]
+22-05-2025 12:13:27 [INFO] - Initializing Spring embedded WebApplicationContext
+22-05-2025 12:13:27 [INFO] - Root WebApplicationContext: initialization completed in 4053 ms
+22-05-2025 12:13:27 [INFO] - HHH000204: Processing PersistenceUnitInfo [name: default]
+22-05-2025 12:13:27 [INFO] - HHH000412: Hibernate ORM core version 6.6.5.Final
+22-05-2025 12:13:27 [INFO] - HHH000026: Second-level cache disabled
+22-05-2025 12:13:28 [INFO] - No LoadTimeWeaver setup: ignoring JPA class transformer
+22-05-2025 12:13:28 [INFO] - HikariPool-1 - Starting...
+22-05-2025 12:13:29 [INFO] - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6afeaf2d
+22-05-2025 12:13:29 [INFO] - HikariPool-1 - Start completed.
+22-05-2025 12:13:29 [WARN] - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+22-05-2025 12:13:29 [INFO] - HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 17.4
@@ -22,346 +24,24 @@
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-15-05-2025 21:07:39 [INFO] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-15-05-2025 21:07:39 [INFO] - Initialized JPA EntityManagerFactory for persistence unit 'default'
-15-05-2025 21:07:40 [INFO] - Hibernate is in classpath; If applicable, HQL parser will be used.
-15-05-2025 21:07:42 [WARN] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-15-05-2025 21:07:42 [INFO] - Adding welcome page: class path resource [static/index.html]
-15-05-2025 21:07:43 [INFO] - Started CinemaApplicationTests in 9.898 seconds (process running for 12.217)
-15-05-2025 21:07:55 [INFO] - Closing JPA EntityManagerFactory for persistence unit 'default'
-15-05-2025 21:07:55 [INFO] - HikariPool-1 - Shutdown initiated...
-15-05-2025 21:07:55 [INFO] - HikariPool-1 - Shutdown completed.
-15-05-2025 21:20:13 [INFO] - Starting CinemaApplicationTests using Java 23.0.2 with PID 24852 (started by vallanbabes in C:\Users\vallanbabes\IdeaProjects\Cinema)
-15-05-2025 21:20:13 [DEBUG] - Running with Spring Boot v3.4.2, Spring v6.2.2
-15-05-2025 21:20:13 [INFO] - No active profile set, falling back to 1 default profile: "default"
-15-05-2025 21:20:14 [INFO] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-15-05-2025 21:20:15 [INFO] - Finished Spring Data repository scanning in 70 ms. Found 2 JPA repository interfaces.
-15-05-2025 21:20:16 [INFO] - HHH000204: Processing PersistenceUnitInfo [name: default]
-15-05-2025 21:20:16 [INFO] - HHH000412: Hibernate ORM core version 6.6.5.Final
-15-05-2025 21:20:16 [INFO] - HHH000026: Second-level cache disabled
-15-05-2025 21:20:16 [INFO] - No LoadTimeWeaver setup: ignoring JPA class transformer
-15-05-2025 21:20:16 [INFO] - HikariPool-1 - Starting...
-15-05-2025 21:20:17 [INFO] - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3d3efa54
-15-05-2025 21:20:17 [INFO] - HikariPool-1 - Start completed.
-15-05-2025 21:20:17 [WARN] - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-15-05-2025 21:20:17 [INFO] - HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 17.4
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-15-05-2025 21:20:18 [INFO] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-15-05-2025 21:20:19 [INFO] - Initialized JPA EntityManagerFactory for persistence unit 'default'
-15-05-2025 21:20:19 [INFO] - Hibernate is in classpath; If applicable, HQL parser will be used.
-15-05-2025 21:20:21 [WARN] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-15-05-2025 21:20:21 [INFO] - Adding welcome page: class path resource [static/index.html]
-15-05-2025 21:20:22 [INFO] - Started CinemaApplicationTests in 9.623 seconds (process running for 11.94)
-15-05-2025 21:21:05 [INFO] - Closing JPA EntityManagerFactory for persistence unit 'default'
-15-05-2025 21:21:05 [INFO] - HikariPool-1 - Shutdown initiated...
-15-05-2025 21:21:05 [INFO] - HikariPool-1 - Shutdown completed.
-15-05-2025 21:42:02 [INFO] - Starting CinemaApplicationTests using Java 23.0.2 with PID 14752 (started by vallanbabes in C:\Users\vallanbabes\IdeaProjects\Cinema)
-15-05-2025 21:42:02 [DEBUG] - Running with Spring Boot v3.4.2, Spring v6.2.2
-15-05-2025 21:42:02 [INFO] - No active profile set, falling back to 1 default profile: "default"
-15-05-2025 21:42:03 [INFO] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-15-05-2025 21:42:03 [INFO] - Finished Spring Data repository scanning in 71 ms. Found 2 JPA repository interfaces.
-15-05-2025 21:42:04 [INFO] - HHH000204: Processing PersistenceUnitInfo [name: default]
-15-05-2025 21:42:05 [INFO] - HHH000412: Hibernate ORM core version 6.6.5.Final
-15-05-2025 21:42:05 [INFO] - HHH000026: Second-level cache disabled
-15-05-2025 21:42:05 [INFO] - No LoadTimeWeaver setup: ignoring JPA class transformer
-15-05-2025 21:42:05 [INFO] - HikariPool-1 - Starting...
-15-05-2025 21:42:05 [INFO] - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@183d22c5
-15-05-2025 21:42:05 [INFO] - HikariPool-1 - Start completed.
-15-05-2025 21:42:05 [WARN] - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-15-05-2025 21:42:06 [INFO] - HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 17.4
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-15-05-2025 21:42:07 [INFO] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-15-05-2025 21:42:07 [INFO] - Initialized JPA EntityManagerFactory for persistence unit 'default'
-15-05-2025 21:42:08 [INFO] - Hibernate is in classpath; If applicable, HQL parser will be used.
-15-05-2025 21:42:10 [WARN] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-15-05-2025 21:42:10 [INFO] - Adding welcome page: class path resource [static/index.html]
-15-05-2025 21:42:11 [INFO] - Started CinemaApplicationTests in 9.736 seconds (process running for 12.031)
-15-05-2025 21:42:48 [INFO] - Closing JPA EntityManagerFactory for persistence unit 'default'
-15-05-2025 21:42:48 [INFO] - HikariPool-1 - Shutdown initiated...
-15-05-2025 21:42:48 [INFO] - HikariPool-1 - Shutdown completed.
-15-05-2025 21:49:31 [INFO] - Starting CinemaApplicationTests using Java 23.0.2 with PID 2192 (started by vallanbabes in C:\Users\vallanbabes\IdeaProjects\Cinema)
-15-05-2025 21:49:31 [DEBUG] - Running with Spring Boot v3.4.2, Spring v6.2.2
-15-05-2025 21:49:31 [INFO] - No active profile set, falling back to 1 default profile: "default"
-15-05-2025 21:49:33 [INFO] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-15-05-2025 21:49:33 [INFO] - Finished Spring Data repository scanning in 71 ms. Found 2 JPA repository interfaces.
-15-05-2025 21:49:34 [INFO] - HHH000204: Processing PersistenceUnitInfo [name: default]
-15-05-2025 21:49:34 [INFO] - HHH000412: Hibernate ORM core version 6.6.5.Final
-15-05-2025 21:49:34 [INFO] - HHH000026: Second-level cache disabled
-15-05-2025 21:49:34 [INFO] - No LoadTimeWeaver setup: ignoring JPA class transformer
-15-05-2025 21:49:35 [INFO] - HikariPool-1 - Starting...
-15-05-2025 21:49:35 [INFO] - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@75a37ebb
-15-05-2025 21:49:35 [INFO] - HikariPool-1 - Start completed.
-15-05-2025 21:49:35 [WARN] - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-15-05-2025 21:49:35 [INFO] - HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 17.4
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-15-05-2025 21:49:37 [INFO] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-15-05-2025 21:49:37 [INFO] - Initialized JPA EntityManagerFactory for persistence unit 'default'
-15-05-2025 21:49:38 [INFO] - Hibernate is in classpath; If applicable, HQL parser will be used.
-15-05-2025 21:49:40 [WARN] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-15-05-2025 21:49:40 [INFO] - Adding welcome page: class path resource [static/index.html]
-15-05-2025 21:49:42 [INFO] - Started CinemaApplicationTests in 11.171 seconds (process running for 13.573)
-15-05-2025 21:50:54 [INFO] - Closing JPA EntityManagerFactory for persistence unit 'default'
-15-05-2025 21:50:54 [INFO] - HikariPool-1 - Shutdown initiated...
-15-05-2025 21:50:54 [INFO] - HikariPool-1 - Shutdown completed.
-15-05-2025 21:53:45 [INFO] - Starting CinemaApplication using Java 23.0.2 with PID 19308 (C:\Users\vallanbabes\IdeaProjects\Cinema\target\classes started by vallanbabes in C:\Users\vallanbabes\IdeaProjects\Cinema)
-15-05-2025 21:53:45 [DEBUG] - Running with Spring Boot v3.4.2, Spring v6.2.2
-15-05-2025 21:53:45 [INFO] - No active profile set, falling back to 1 default profile: "default"
-15-05-2025 21:53:46 [INFO] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-15-05-2025 21:53:46 [INFO] - Finished Spring Data repository scanning in 44 ms. Found 2 JPA repository interfaces.
-15-05-2025 21:53:46 [INFO] - Tomcat initialized with port 8080 (http)
-15-05-2025 21:53:46 [INFO] - Starting service [Tomcat]
-15-05-2025 21:53:46 [INFO] - Starting Servlet engine: [Apache Tomcat/10.1.34]
-15-05-2025 21:53:47 [INFO] - Initializing Spring embedded WebApplicationContext
-15-05-2025 21:53:47 [INFO] - Root WebApplicationContext: initialization completed in 1493 ms
-15-05-2025 21:53:47 [INFO] - HHH000204: Processing PersistenceUnitInfo [name: default]
-15-05-2025 21:53:47 [INFO] - HHH000412: Hibernate ORM core version 6.6.5.Final
-15-05-2025 21:53:47 [INFO] - HHH000026: Second-level cache disabled
-15-05-2025 21:53:47 [INFO] - No LoadTimeWeaver setup: ignoring JPA class transformer
-15-05-2025 21:53:47 [INFO] - HikariPool-1 - Starting...
-15-05-2025 21:53:47 [INFO] - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@29d2fa84
-15-05-2025 21:53:47 [INFO] - HikariPool-1 - Start completed.
-15-05-2025 21:53:47 [WARN] - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-15-05-2025 21:53:47 [INFO] - HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 17.4
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-15-05-2025 21:53:48 [INFO] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-15-05-2025 21:53:48 [INFO] - Initialized JPA EntityManagerFactory for persistence unit 'default'
-15-05-2025 21:53:49 [INFO] - Hibernate is in classpath; If applicable, HQL parser will be used.
-15-05-2025 21:53:49 [WARN] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-15-05-2025 21:53:50 [INFO] - Adding welcome page: class path resource [static/index.html]
-15-05-2025 21:53:50 [INFO] - Tomcat started on port 8080 (http) with context path '/'
-15-05-2025 21:53:50 [INFO] - Started CinemaApplication in 5.663 seconds (process running for 6.349)
-15-05-2025 21:54:01 [INFO] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-15-05-2025 21:54:01 [INFO] - Initializing Servlet 'dispatcherServlet'
-15-05-2025 21:54:01 [INFO] - Completed initialization in 0 ms
-15-05-2025 21:54:01 [INFO] - Выполнение метода: LogController.createLogFile(..)
-15-05-2025 21:54:01 [INFO] - Метод LogController.createLogFile(..) успешно выполнен. Результат: <200 OK OK,1,[]>
-15-05-2025 21:54:02 [INFO] - Выполнение метода: LogController.createLogFile(..)
-15-05-2025 21:54:02 [INFO] - Метод LogController.createLogFile(..) успешно выполнен. Результат: <200 OK OK,2,[]>
-15-05-2025 21:54:05 [INFO] - Выполнение метода: LogController.getStatus(..)
-15-05-2025 21:54:05 [INFO] - Метод LogController.getStatus(..) успешно выполнен. Результат: <200 OK OK,{status=IN_PROGRESS},[]>
-15-05-2025 21:54:07 [INFO] - Выполнение метода: LogController.getLogFileById(..)
-15-05-2025 21:54:07 [INFO] - Метод LogController.getLogFileById(..) успешно выполнен. Результат: <200 OK OK,URL [file:///C:/Users/VALLAN~1/AppData/Local/Temp/logs-15-05-20255804449081267897151.log],[Content-Type:"application/octet-stream", Content-Disposition:"attachment; filename="logs-15-05-20255804449081267897151.log""]>
-15-05-2025 21:54:09 [INFO] - Выполнение метода: LogController.getStatus(..)
-15-05-2025 21:54:09 [INFO] - Метод LogController.getStatus(..) успешно выполнен. Результат: <200 OK OK,{status=COMPLETED},[]>
-15-05-2025 21:54:27 [INFO] - Commencing graceful shutdown. Waiting for active requests to complete
-15-05-2025 21:54:27 [INFO] - Graceful shutdown complete
-15-05-2025 21:54:27 [INFO] - Closing JPA EntityManagerFactory for persistence unit 'default'
-15-05-2025 21:54:27 [INFO] - HikariPool-1 - Shutdown initiated...
-15-05-2025 21:54:27 [INFO] - HikariPool-1 - Shutdown completed.
-15-05-2025 21:54:30 [INFO] - Starting CinemaApplication using Java 23.0.2 with PID 19332 (C:\Users\vallanbabes\IdeaProjects\Cinema\target\classes started by vallanbabes in C:\Users\vallanbabes\IdeaProjects\Cinema)
-15-05-2025 21:54:30 [DEBUG] - Running with Spring Boot v3.4.2, Spring v6.2.2
-15-05-2025 21:54:30 [INFO] - No active profile set, falling back to 1 default profile: "default"
-15-05-2025 21:54:31 [INFO] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-15-05-2025 21:54:31 [INFO] - Finished Spring Data repository scanning in 46 ms. Found 2 JPA repository interfaces.
-15-05-2025 21:54:32 [INFO] - Tomcat initialized with port 8080 (http)
-15-05-2025 21:54:32 [INFO] - Starting service [Tomcat]
-15-05-2025 21:54:32 [INFO] - Starting Servlet engine: [Apache Tomcat/10.1.34]
-15-05-2025 21:54:32 [INFO] - Initializing Spring embedded WebApplicationContext
-15-05-2025 21:54:32 [INFO] - Root WebApplicationContext: initialization completed in 1464 ms
-15-05-2025 21:54:32 [INFO] - HHH000204: Processing PersistenceUnitInfo [name: default]
-15-05-2025 21:54:32 [INFO] - HHH000412: Hibernate ORM core version 6.6.5.Final
-15-05-2025 21:54:32 [INFO] - HHH000026: Second-level cache disabled
-15-05-2025 21:54:33 [INFO] - No LoadTimeWeaver setup: ignoring JPA class transformer
-15-05-2025 21:54:33 [INFO] - HikariPool-1 - Starting...
-15-05-2025 21:54:33 [INFO] - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6ebbc06
-15-05-2025 21:54:33 [INFO] - HikariPool-1 - Start completed.
-15-05-2025 21:54:33 [WARN] - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-15-05-2025 21:54:33 [INFO] - HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 17.4
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-15-05-2025 21:54:34 [INFO] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-15-05-2025 21:54:34 [INFO] - Initialized JPA EntityManagerFactory for persistence unit 'default'
-15-05-2025 21:54:34 [INFO] - Hibernate is in classpath; If applicable, HQL parser will be used.
-15-05-2025 21:54:35 [WARN] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-15-05-2025 21:54:35 [INFO] - Adding welcome page: class path resource [static/index.html]
-15-05-2025 21:54:36 [INFO] - Tomcat started on port 8080 (http) with context path '/'
-15-05-2025 21:54:36 [INFO] - Started CinemaApplication in 5.602 seconds (process running for 6.221)
-15-05-2025 21:54:40 [INFO] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-15-05-2025 21:54:40 [INFO] - Initializing Servlet 'dispatcherServlet'
-15-05-2025 21:54:40 [INFO] - Completed initialization in 1 ms
-15-05-2025 21:54:40 [INFO] - Выполнение метода: LogController.getStatus(..)
-15-05-2025 21:54:40 [ERROR] - Ошибка в методе: LogController.getStatus(..). Сообщение: Cannot invoke "com.example.cinema.model.LogObject.getStatus()" because "logObject" is null
-15-05-2025 21:54:40 [ERROR] - Внутренняя ошибка сервера: Cannot invoke "com.example.cinema.model.LogObject.getStatus()" because "logObject" is null
-java.lang.NullPointerException: Cannot invoke "com.example.cinema.model.LogObject.getStatus()" because "logObject" is null
-	at com.example.cinema.controller.LogController.getStatus(LogController.java:49)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
-	at org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
-	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:57)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
-	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:58)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
-	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
-	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:727)
-	at com.example.cinema.controller.LogController$$SpringCGLIB$$0.getStatus(<generated>)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:257)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
-	at java.base/java.lang.Thread.run(Thread.java:1575)
-15-05-2025 21:54:43 [INFO] - Выполнение метода: LogController.createLogFile(..)
-15-05-2025 21:54:43 [INFO] - Метод LogController.createLogFile(..) успешно выполнен. Результат: <200 OK OK,1,[]>
-15-05-2025 21:54:46 [INFO] - Выполнение метода: LogController.getStatus(..)
-15-05-2025 21:54:46 [INFO] - Метод LogController.getStatus(..) успешно выполнен. Результат: <200 OK OK,{status=IN_PROGRESS},[]>
-15-05-2025 21:54:48 [INFO] - Выполнение метода: LogController.getLogFileById(..)
-15-05-2025 21:54:48 [ERROR] - Ошибка в методе: LogController.getLogFileById(..). Сообщение: 400 BAD_REQUEST "Логов ещё нет"
-15-05-2025 21:54:48 [ERROR] - Внутренняя ошибка сервера: 400 BAD_REQUEST "Логов ещё нет"
-org.springframework.web.server.ResponseStatusException: 400 BAD_REQUEST "Логов ещё нет"
-	at com.example.cinema.service.LogService.downloadCreatedLogs(LogService.java:107)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
-	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:723)
-	at com.example.cinema.service.LogService$$SpringCGLIB$$1.downloadCreatedLogs(<generated>)
-	at com.example.cinema.controller.LogController.getLogFileById(LogController.java:62)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
-	at org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
-	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:57)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
-	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:58)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
-	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
-	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:727)
-	at com.example.cinema.controller.LogController$$SpringCGLIB$$0.getLogFileById(<generated>)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:257)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
-	at java.base/java.lang.Thread.run(Thread.java:1575)
-15-05-2025 21:54:55 [INFO] - Выполнение метода: LogController.createLogFile(..)
-15-05-2025 21:54:55 [INFO] - Метод LogController.createLogFile(..) успешно выполнен. Результат: <200 OK OK,2,[]>
-15-05-2025 21:54:58 [INFO] - Выполнение метода: LogController.getStatus(..)
-15-05-2025 21:54:58 [INFO] - Метод LogController.getStatus(..) успешно выполнен. Результат: <200 OK OK,{status=COMPLETED},[]>
-15-05-2025 21:55:01 [INFO] - Выполнение метода: LogController.getLogFileById(..)
-15-05-2025 21:55:01 [INFO] - Метод LogController.getLogFileById(..) успешно выполнен. Результат: <200 OK OK,URL [file:///C:/Users/VALLAN~1/AppData/Local/Temp/logs-15-05-20257567252684851997644.log],[Content-Type:"application/octet-stream", Content-Disposition:"attachment; filename="logs-15-05-20257567252684851997644.log""]>
-15-05-2025 21:55:05 [INFO] - Commencing graceful shutdown. Waiting for active requests to complete
-15-05-2025 21:55:05 [INFO] - Graceful shutdown complete
-15-05-2025 21:55:05 [INFO] - Closing JPA EntityManagerFactory for persistence unit 'default'
-15-05-2025 21:55:05 [INFO] - HikariPool-1 - Shutdown initiated...
-15-05-2025 21:55:05 [INFO] - HikariPool-1 - Shutdown completed.
+22-05-2025 12:13:30 [INFO] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+22-05-2025 12:13:31 [INFO] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+22-05-2025 12:13:31 [INFO] - Hibernate is in classpath; If applicable, HQL parser will be used.
+22-05-2025 12:13:33 [WARN] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+22-05-2025 12:13:33 [INFO] - Adding welcome page: class path resource [static/index.html]
+22-05-2025 12:13:34 [INFO] - Tomcat started on port 8080 (http) with context path '/'
+22-05-2025 12:13:34 [INFO] - Started CinemaApplication in 11.974 seconds (process running for 13.067)
+22-05-2025 12:16:33 [INFO] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+22-05-2025 12:16:33 [INFO] - Initializing Servlet 'dispatcherServlet'
+22-05-2025 12:16:33 [INFO] - Completed initialization in 1 ms
+22-05-2025 12:16:33 [INFO] - Выполнение метода: HallController.createHallsBulk(..)
+22-05-2025 12:16:33 [INFO] - Метод HallController.createHallsBulk(..) успешно выполнен. Результат: <201 CREATED Created,[com.example.cinema.model.Hall@12303276, com.example.cinema.model.Hall@69e1ed22, com.example.cinema.model.Hall@47818dd0],[]>
+22-05-2025 12:28:32 [INFO] - Выполнение метода: HallController.createHallsBulk(..)
+22-05-2025 12:28:32 [INFO] - Метод HallController.createHallsBulk(..) успешно выполнен. Результат: <201 CREATED Created,[com.example.cinema.model.Hall@3c3c1e2d, com.example.cinema.model.Hall@38038d72, com.example.cinema.model.Hall@7d011416],[]>
+22-05-2025 12:30:05 [INFO] - Выполнение метода: HallController.createHallsBulk(..)
+22-05-2025 12:30:05 [INFO] - Метод HallController.createHallsBulk(..) успешно выполнен. Результат: <201 CREATED Created,[com.example.cinema.model.Hall@779131ba, com.example.cinema.model.Hall@73aeab90, com.example.cinema.model.Hall@36ac3b81],[]>
+22-05-2025 12:31:52 [INFO] - Commencing graceful shutdown. Waiting for active requests to complete
+22-05-2025 12:31:52 [INFO] - Graceful shutdown complete
+22-05-2025 12:31:52 [INFO] - Closing JPA EntityManagerFactory for persistence unit 'default'
+22-05-2025 12:31:52 [INFO] - HikariPool-1 - Shutdown initiated...
+22-05-2025 12:31:52 [INFO] - HikariPool-1 - Shutdown completed.

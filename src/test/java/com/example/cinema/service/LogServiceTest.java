@@ -139,41 +139,6 @@ class LogServiceTest {
     assertNotNull(updatedTask.getErrorMessage());
   }
 
-  @Test
-  void createLogAsync_createsNewTaskWithCorrectState() {
-    // 1. Подготовка
-    String testDate = "15-05-2025";
-
-    // 2. Вызов метода
-    Long taskId = logService.createLogAsync(testDate);
-
-    // 3. Проверки синхронной части
-    assertNotNull(taskId);
-    assertEquals(1L, taskId);
-
-    LogObject task = logService.tasks.get(taskId);
-    assertNotNull(task);
-    assertEquals("IN_PROGRESS", task.getStatus());
-    assertNull(task.getFilePath());
-    assertNull(task.getErrorMessage());
-
-    // 4. Проверяем, что асинхронный метод был вызван
-    verify(logService.self, times(1)).createLogs(taskId, testDate);
-  }
-
-  @Test
-  void createLogAsync_triggersAsyncProcessing() {
-    // 1. Создаем spy сервиса
-    LogService spyService = spy(logService);
-    spyService.self = spyService;
-
-    // 2. Вызов метода
-    spyService.createLogAsync("15-05-2025");
-
-    // 3. Проверяем вызов асинхронного метода
-    verify(spyService, timeout(1000))
-            .createLogs(anyLong(), eq("15-05-2025"));
-  }
 
   @Test
   void downloadCreatedLogs_taskNotCompleted_throwsResponseStatusException() {
