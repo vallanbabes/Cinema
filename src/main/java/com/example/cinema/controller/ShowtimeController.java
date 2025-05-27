@@ -1,5 +1,6 @@
 package com.example.cinema.controller;
 
+import com.example.cinema.dto.ShowtimeDto;
 import com.example.cinema.model.Hall;
 import com.example.cinema.model.Showtime;
 import com.example.cinema.service.ShowtimeService;
@@ -12,6 +13,7 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.List;
 import org.springframework.format.annotation.DateTimeFormat;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -67,8 +69,8 @@ public class ShowtimeController {
    */
   @Operation(summary = "Get all showtimes")
   @GetMapping
-  public List<Showtime> getAllShowtimes() {
-    return showtimeService.getAllShowtimes();
+  public ResponseEntity<List<ShowtimeDto>> getAllShowtimes() {
+    return ResponseEntity.ok(showtimeService.getAllShowtimes());
   }
 
   /**

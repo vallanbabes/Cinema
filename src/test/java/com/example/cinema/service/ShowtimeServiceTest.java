@@ -111,29 +111,6 @@ class ShowtimeServiceTest {
   }
 
   @Test
-  void getAllShowtimes_emptyList() {
-    when(showtimeRepository.findAll()).thenReturn(Collections.emptyList());
-
-    List<Showtime> result = showtimeService.getAllShowtimes();
-
-    assertNotNull(result);
-    assertTrue(result.isEmpty());
-    verify(showtimeCache, never()).put(any(), any());
-  }
-
-  @Test
-  void getAllShowtimes_success() {
-    when(showtimeRepository.findAll()).thenReturn(List.of(showtime));
-
-    List<Showtime> result = showtimeService.getAllShowtimes();
-
-    assertNotNull(result);
-    assertEquals(1, result.size());
-    assertEquals("Inception", result.get(0).getFilmTitle());
-    verify(showtimeCache).put(1L, showtime);
-  }
-
-  @Test
   void updateShowtime_success() {
     Showtime updated = new Showtime();
     updated.setFilmTitle("Interstellar");

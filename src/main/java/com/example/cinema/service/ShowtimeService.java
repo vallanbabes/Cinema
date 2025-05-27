@@ -1,6 +1,8 @@
 package com.example.cinema.service;
 
 import com.example.cinema.cache.ShowtimeCache;
+import com.example.cinema.dto.HallDto;
+import com.example.cinema.dto.ShowtimeDto;
 import com.example.cinema.model.Hall;
 import com.example.cinema.model.Showtime;
 import com.example.cinema.repository.HallRepository;
@@ -8,6 +10,8 @@ import com.example.cinema.repository.ShowtimeRepository;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.List;
+import java.util.stream.Collectors;
+
 import org.springframework.stereotype.Service;
 
 /**
@@ -81,10 +85,30 @@ public class ShowtimeService {
    *
    * @return a list of all showtime records
    */
-  public List<Showtime> getAllShowtimes() {
-    List<Showtime> showtimes = showtimeRepository.findAll();
-    showtimes.forEach(showtime -> showtimeCache.put(showtime.getId(), showtime));
-    return showtimes;
+  public List<ShowtimeDto> getAllShowtimes() {
+    return showtimeRepository.findAll().stream()
+            .map(this::convertToDto)
+            .collect(Collectors.toList());
+  }
+
+  private ShowtimeDto convertToDto(Showtime showtime) {
+    Hall hall = showtime.getHall();
+    HallDto hallDto = convertHallToDto(hall);
+
+    return new ShowtimeDto(
+            showtime.getId(),
+            showtime.getDateTime(),
+            showtime.getFilmTitle(),
+            hallDto
+    );
+  }
+
+  private HallDto convertHallToDto(Hall hall) {
+    return new HallDto(
+            hall.getId(),
+            hall.getName(),
+            hall.getCapacity()
+    );
   }
 
   /**
